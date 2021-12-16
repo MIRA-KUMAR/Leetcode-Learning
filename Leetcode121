@@ -1,0 +1,15 @@
+def maxProfit(prices):
+    max_profit = 0
+    min_profit = max(prices)
+
+    for i in range(len(prices)):
+        if prices[i] < min_profit:
+            min_profit = prices[i]
+        elif max_profit < prices[i] - min_profit:
+            max_profit = prices[i] - min_profit
+
+    return max_profit
+
+
+res = maxProfit([7, 1, 5, 3, 6, 4])
+print(res)
