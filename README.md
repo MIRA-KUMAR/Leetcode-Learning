@@ -25,3 +25,9 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 
 # LeetCode 2016: Maximum Difference Between Increasing Elements
 Given a 0-indexed integer array nums of size n, find the maximum difference between nums[i] and nums[j] (i.e., nums[j] - nums[i]), such that 0 <= i < j < n and nums[i] < nums[j]. Return the maximum difference. If no such i and j exists, return -1.
+
+
+# LeetCode 2078: Two Furthest Houses With Different Colors
+There are n houses evenly lined up on the street, and each house is beautifully painted. You are given a 0-indexed integer array colors of length n, where colors[i] represents the color of the ith house.
+Return the maximum distance between two houses with different colors.
+The distance between the ith and jth houses is abs(i - j), where abs(x) is the absolute value of x.
