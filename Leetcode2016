@@ -1,0 +1,27 @@
+def maximumDifference(nums):
+    #         """Brute Force"""
+
+    #         # res = -1
+    #         # for i in range(len(nums)):
+    #         #     for j in range(i, len(nums)):
+    #         #         if nums[i] < nums[j] and  res < nums[j] - nums[i]:
+    #         #             res = nums[j] - nums[i]
+    #         # return res
+
+    #         """Single Pass"""
+
+    max_ele = 0
+    min_ele = max(nums)
+    for i in range(len(nums)):
+        if nums[i] < min_ele:
+            min_ele = nums[i]
+        elif max_ele < nums[i] - min_ele:
+            max_ele = nums[i] - min_ele
+
+    if max_ele == 0:
+        return -1
+    return max_ele
+
+
+res = maximumDifference([7, 1, 5, 4])
+print(res)
