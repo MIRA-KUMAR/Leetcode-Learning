@@ -1,0 +1,11 @@
+def maxProfit(prices):
+    diff = 0
+    for i in range(len(prices)):
+        if i+1 < len(prices):
+            if prices[i+1] > prices[i]:
+                diff = diff + (prices[i+1] - prices[i])
+    return diff
+
+
+res = maxProfit([7, 1, 5, 3, 6, 4])
+print(res)
