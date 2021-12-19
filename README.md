@@ -33,6 +33,16 @@ Find and return the maximum profit you can achieve.
 Given the root of a binary tree, return the postorder traversal of its nodes' values.
 
 
+# LeetCode 202: Happy Number
+Write an algorithm to determine if a number n is happy.
+  A happy number is a number defined by the following process:
+
+    Starting with any positive integer, replace the number by the sum of the squares of its digits.
+    Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
+    Those numbers for which this process ends in 1 are happy.
+    Return true if n is a happy number, and false if not.
+
+ 
 # LeetCode 206: Reverse Linked List
 Given the head of a singly linked list, reverse the list, and return the reversed list.
 
