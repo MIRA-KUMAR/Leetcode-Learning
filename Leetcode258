@@ -1,0 +1,15 @@
+def addDigits(num):
+        
+    def addDigitsHelper(n):
+        total = 0
+        while n>0:
+            total += n%10
+            n = n//10
+        return total
+    
+    while len(str(num))!=1:
+        num = addDigitsHelper(num)
+    
+    return num
+
+print(addDigits(38))
