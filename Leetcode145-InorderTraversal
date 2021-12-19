@@ -1,0 +1,19 @@
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+def inoderTraversal(root):
+    if not root:
+        return root
+    stack = [root]
+    res = []
+    while stack:
+        curr = stack.pop()
+        if curr:
+            stack.append(curr.right)
+            res.append(curr.val)
+            stack.append(curr.left)
+    return res

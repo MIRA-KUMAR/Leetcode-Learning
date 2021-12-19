@@ -1,0 +1,22 @@
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+def postorderTraversal(root):
+    if not root:
+        return root
+    res = []
+    stack = [root]
+    while stack:
+        curr = stack.pop()
+        if curr:
+            res.append(curr.val)
+            stack.append(curr.left)
+            stack.append(curr.right)
+    return res[::-1]
+
+
+print(postorderTraversal([1, None, 2, 3]))
