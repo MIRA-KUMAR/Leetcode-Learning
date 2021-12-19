@@ -47,6 +47,10 @@ Write an algorithm to determine if a number n is happy.
 Given the head of a singly linked list, reverse the list, and return the reversed list.
 
 
+# LeetCode 258: Add Digits
+Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
+
+
 # LeetCode 2016: Maximum Difference Between Increasing Elements
 Given a 0-indexed integer array nums of size n, find the maximum difference between nums[i] and nums[j] (i.e., nums[j] - nums[i]), such that 0 <= i < j < n and nums[i] < nums[j]. Return the maximum difference. If no such i and j exists, return -1.
 
