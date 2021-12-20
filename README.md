@@ -55,6 +55,11 @@ Given an integer num, repeatedly add all its digits until the result has only on
 Given an integer array nums, return 0 if the sum of the digits of the minimum integer in nums is odd, or 1 otherwise.
 
 
+# LeetCode 1134: Armstrong Number
+Given an integer n, return true if and only if it is an Armstrong number.
+The k-digit number n is an Armstrong number if and only if the kth power of each digit sums to n.
+
+
 # LeetCode 2016: Maximum Difference Between Increasing Elements
 Given a 0-indexed integer array nums of size n, find the maximum difference between nums[i] and nums[j] (i.e., nums[j] - nums[i]), such that 0 <= i < j < n and nums[i] < nums[j]. Return the maximum difference. If no such i and j exists, return -1.
 
