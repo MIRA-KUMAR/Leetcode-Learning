@@ -1,0 +1,15 @@
+def isArmstrongHelper(n, l):
+    total = 0
+    while n > 0:
+        total += (n % 10)**l
+        n = n//10
+    return total
+
+
+def isArmstrong(n):
+    l = len(str(n))
+    res = isArmstrongHelper(n, l)
+    return res == n
+
+
+print(isArmstrong(1634))
