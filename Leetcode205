@@ -1,0 +1,21 @@
+def isIsomorphic(s, t):
+    """Method 1: One liner"""
+    # return (len(set(s)) == len(set(t)) == len(set(zip(s,t))))
+
+    """Method 2: Using dictionaries:"""
+    dict1 = {}
+    dict2 = {}
+
+    for (s1, t1) in zip(s, t):
+        if s1 not in dict1 and t1 not in dict2:
+            dict1[s1] = t1
+            dict2[t1] = s1
+
+        elif dict1.get(s1) != t1 or dict2.get(t1) != s1:
+            return False
+
+    return True
+
+
+print(isIsomorphic('egg', 'add'))
+print(isIsomorphic('egg', 'bag'))
