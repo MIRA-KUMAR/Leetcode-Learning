@@ -42,6 +42,13 @@ Write an algorithm to determine if a number n is happy.
     Those numbers for which this process ends in 1 are happy.
     Return true if n is a happy number, and false if not.
 
+
+# LeetCode 205 : Isomorphic Strings
+Given two strings s and t, determine if they are isomorphic.
+Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+    
+    All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character,but a character may map to itself.
+
  
 # LeetCode 206: Reverse Linked List
 Given the head of a singly linked list, reverse the list, and return the reversed list.
