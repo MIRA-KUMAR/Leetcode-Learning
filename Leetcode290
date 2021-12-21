@@ -1,0 +1,24 @@
+def wordPattern(pattern, s):
+
+    s = s.split(' ')
+
+    if len(pattern) != len(s):
+        return False
+
+    dict1 = {}
+    dict2 = {}
+
+    for (i, j) in zip(pattern, s):
+        if i not in dict1 and j not in dict2:
+            dict1[i] = j
+            dict2[j] = i
+
+        elif dict1.get(i) != j or dict2.get(j) != i:
+            return False
+
+    return True
+
+
+print(wordPattern("abba", "dog cat cat dog"))
+print(wordPattern("abba", "dog cat cat fish"))
+print(wordPattern("aaaa", "dog cat cat dog"))
