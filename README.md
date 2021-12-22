@@ -58,6 +58,11 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
 
 
+# LeetCode 290: Word Pattern
+Given a pattern and a string s, find if s follows the same pattern.
+Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.
+
+
 # LeetCode 1085: Sum of Digits in the Minimum Number
 Given an integer array nums, return 0 if the sum of the digits of the minimum integer in nums is odd, or 1 otherwise.
 
