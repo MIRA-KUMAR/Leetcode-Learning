@@ -43,6 +43,10 @@ Write an algorithm to determine if a number n is happy.
     Return true if n is a happy number, and false if not.
 
 
+# LeetCode 203 : Remove Linked List Elements
+Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+
+
 # LeetCode 205 : Isomorphic Strings
 Given two strings s and t, determine if they are isomorphic.
 Two strings s and t are isomorphic if the characters in s can be replaced to get t.
