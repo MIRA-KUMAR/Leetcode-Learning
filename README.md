@@ -54,13 +54,13 @@ Two strings s and t are isomorphic if the characters in s can be replaced to get
 Given the head of a singly linked list, reverse the list, and return the reversed list.
 
 
+# LeetCode 258: Add Digits
+Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
+
+
 # LeetCode 290: Word Pattern
 Given a pattern and a string s, find if s follows the same pattern.
 Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.
-
-
-# LeetCode 258: Add Digits
-Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
 
 
 # LeetCode 1085: Sum of Digits in the Minimum Number
