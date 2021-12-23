@@ -37,7 +37,7 @@ def containsNearbyDuplicate(nums, k):
 
             dup2[nums[i]] = i
 
-        return False
+    return False
 
 
 nums = [1, 2, 3, 1]
