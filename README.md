@@ -58,6 +58,10 @@ Two strings s and t are isomorphic if the characters in s can be replaced to get
 Given the head of a singly linked list, reverse the list, and return the reversed list.
 
 
+# LeetCode 217: Contains Duplicate
+Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+
+
 # LeetCode 258: Add Digits
 Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
 
