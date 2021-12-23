@@ -1,0 +1,12 @@
+def containsDuplicate(nums):
+    dup = set()
+    for i in nums:
+        if i not in dup:
+            dup.add(i)
+        else:
+            return True
+    return False
+
+
+print(containsDuplicate([1, 2, 3, 1]))
+print(containsDuplicate([1, 2, 3, 4]))
