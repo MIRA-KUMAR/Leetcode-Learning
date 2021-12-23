@@ -1,0 +1,53 @@
+def containsNearbyDuplicate(nums, k):
+
+    # 1. Using Sets:
+    """dup2 = set()
+
+    for i in range(len(nums)):
+        if nums[i] in dup2:
+            return True
+
+        dup2.add(nums[i])
+
+        if len(dup2) > k:
+            dup2.remove(nums[i-k])
+
+    return False"""
+
+    # 2. Using two for loops:
+    # Time complexity: O(N squared)
+    """if len(nums) == len(set(nums)):
+        return False
+
+    for i in range(len(nums)):
+        for j in range(i+1, len(nums)):
+            if nums[i] == nums[j] and j - i <= k and i != j:
+                return True
+
+    return False"""
+
+    # 3. Using dictionaries and getting the indices:
+    dup2 = {}
+    for i in range(len(nums)):
+        if nums[i] not in dup2:
+            dup2[nums[i]] = i
+        else:
+            if abs(dup2.get(nums[i]) - i) <= k:
+                return True
+
+            dup2[nums[i]] = i
+
+        return False
+
+
+nums = [1, 2, 3, 1]
+k = 3
+print(containsNearbyDuplicate(nums, k))
+
+nums = [1, 0, 1, 1]
+k = 1
+print(containsNearbyDuplicate(nums, k))
+
+nums = [1, 2, 3, 1, 2, 3]
+k = 2
+print(containsNearbyDuplicate(nums, k))
