@@ -1,0 +1,28 @@
+def reverseVowels(s):
+    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+
+    s = list(s)
+    lp = 0
+    rp = len(s)-1
+
+    while lp < rp:
+        if s[lp] in vowels and s[rp] in vowels:
+            s[lp], s[rp] = s[rp], s[lp]
+            lp = lp+1
+            rp = rp-1
+
+        elif s[lp] in vowels and s[rp] not in vowels:
+            rp = rp-1
+
+        elif s[lp] not in vowels and s[rp] in vowels:
+            lp = lp+1
+
+        else:
+            lp = lp+1
+            rp = rp-1
+
+    return ''.join(s)
+
+
+print(reverseVowels("hello"))
+print(reverseVowels("leetcode"))

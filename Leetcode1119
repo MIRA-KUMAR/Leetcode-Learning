@@ -1,0 +1,12 @@
+def removeVowels(s):
+    a = ''
+    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    lp = 0
+    while lp < len(s):
+        if s[lp] not in vowels:
+            a += s[lp]
+        lp = lp+1
+    return a
+
+
+print(removeVowels("leetcodeisacommunityforcoders"))
