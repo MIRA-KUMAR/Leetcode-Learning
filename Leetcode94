@@ -1,0 +1,13 @@
+def inorderTraversal(root):
+    if not root:
+        return root
+    stack = []
+    curr = root
+    while curr!= None or stack != []:
+        while curr!= None:
+            stack.append(curr)
+            curr = curr.left
+        curr = stack.pop()
+        res.append(curr.val)
+        curr = curr.right
+    return res
