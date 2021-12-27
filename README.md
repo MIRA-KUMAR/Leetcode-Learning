@@ -66,6 +66,11 @@ Given an integer array nums, return true if any value appears at least twice in 
 Given an integer array nums and an integer k, return true if there are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k.
 
 
+# LeetCode 231: Power of Two
+Given an integer n, return true if it is a power of two. Otherwise, return false.
+An integer n is a power of two, if there exists an integer x such that n == 2x.
+
+
 # LeetCode 258: Add Digits
 Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
 
