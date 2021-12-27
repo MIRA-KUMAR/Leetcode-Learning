@@ -80,6 +80,11 @@ Given a pattern and a string s, find if s follows the same pattern.
 Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.
 
 
+# LeetCode 326: Power of Three
+Given an integer n, return true if it is a power of three. Otherwise, return false.
+An integer n is a power of three, if there exists an integer x such that n == 3x.
+
+
 # LeetCode 344: Reverse String
 Write a function that reverses a string. The input string is given as an array of characters s.
 You must do this by modifying the input array in-place with O(1) extra memory.
