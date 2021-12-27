@@ -80,8 +80,17 @@ Write a function that reverses a string. The input string is given as an array o
 You must do this by modifying the input array in-place with O(1) extra memory.
 
 
+# LeetCode 345: Reverse Vowels of a String
+Given a string s, reverse only all the vowels in the string and return it.
+The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both cases.
+
+
 # LeetCode 1085: Sum of Digits in the Minimum Number
 Given an integer array nums, return 0 if the sum of the digits of the minimum integer in nums is odd, or 1 otherwise.
+
+
+# LeetCode 1119: Remove Vowels from a String
+Given a string s, remove the vowels 'a', 'e', 'i', 'o', and 'u' from it, and return the new string.
 
 
 # LeetCode 1134: Armstrong Number
