@@ -1,0 +1,16 @@
+def isPowerOfThree(n):
+    val = 1
+    power = 0
+    
+    while n >= val:
+        if n == val:
+            return True
+        power += 1
+        val = 3**power
+    
+    return False
+
+print(isPowerOfThree(1))
+print(isPowerOfThree(3))
+print(isPowerOfThree(27))
+print(isPowerOfThree(100))
