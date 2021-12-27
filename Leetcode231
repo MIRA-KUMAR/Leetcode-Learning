@@ -1,0 +1,20 @@
+def isPowerOfTwo(n):
+
+    if n == 1:
+        return True
+
+    power = 1
+    val = 2
+
+    while n >= val:
+        if n == val:
+            return True
+        power += 1
+        val = 2**power
+
+    return False
+
+
+print(isPowerOfTwo(2))
+print(isPowerOfTwo(16))
+print(isPowerOfTwo(13))
