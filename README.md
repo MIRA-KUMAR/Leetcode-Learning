@@ -99,6 +99,10 @@ Given a string s, reverse only all the vowels in the string and return it.
 The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both cases.
 
 
+# LeetCode 783: Minimum Distance Between BST Nodes
+Given the root of a Binary Search Tree (BST), return the minimum difference between the values of any two different nodes in the tree.
+
+
 # LeetCode 1085: Sum of Digits in the Minimum Number
 Given an integer array nums, return 0 if the sum of the digits of the minimum integer in nums is odd, or 1 otherwise.
 
