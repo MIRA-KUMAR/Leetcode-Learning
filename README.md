@@ -99,6 +99,15 @@ Given a string s, reverse only all the vowels in the string and return it.
 The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both cases.
 
 
+# LeetCode 617: Merge Two Binary Trees
+You are given two binary trees root1 and root2.
+Imagine that when you put one of them to cover the other, some nodes of the two trees are overlapped while the others are not. You need to merge the two trees into a new binary tree. The merge rule is that if two nodes overlap, then sum node values up as the new value of the merged node. Otherwise, the NOT null node will be used as the node of the new tree.
+
+Return the merged tree.
+
+    Note: The merging process must start from the root nodes of both trees.
+    
+    
 # LeetCode 783: Minimum Distance Between BST Nodes
 Given the root of a Binary Search Tree (BST), return the minimum difference between the values of any two different nodes in the tree.
 
