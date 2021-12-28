@@ -1,0 +1,14 @@
+def rangeSumBST(root, low, high):
+
+    ans = 0
+    stack = [root]
+    while stack:
+        node = stack.pop()
+        if node:
+            if low <= node.val and node.val <= high:
+                ans += node.val
+            if node.val > low:
+                stack.append(node.left)
+            if node.val < high:
+                stack.append(node.right)
+    return ans
