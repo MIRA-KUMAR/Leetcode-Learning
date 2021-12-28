@@ -7,8 +7,10 @@ Return k after placing the final result in the first k slots of nums.
 Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
 
 
+
 # LeetCode 94: Binary Tree Inorder Traversal
 Given the root of a binary tree, return the inorder traversal of its nodes' values.
+
 
 
 # LeetCode 108: Convert Sorted Array to Binary Search Tree:
@@ -16,9 +18,11 @@ Given an integer array nums where the elements are sorted in ascending order, co
 A height-balanced binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.
 
 
+
 # LeetCode 111: Minimum Depth of Binary Tree
 Given a binary tree, find its minimum depth.
 The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
+
 
 
 # LeetCode 121: Best Time to Buy and Sell Stock
@@ -27,14 +31,17 @@ You want to maximize your profit by choosing a single day to buy one stock and c
 Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 
 
+
 # LeetCode 122: Best Time to Buy and Sell Stock II
 You are given an integer array prices where prices[i] is the price of a given stock on the ith day.
 On each day, you may decide to buy and/or sell the stock. You can only hold at most one share of the stock at any time. However, you can buy it then immediately sell it on the same day.
 Find and return the maximum profit you can achieve.
 
 
+
 # LeetCode 145: Binary Tree Postorder Traversal
 Given the root of a binary tree, return the postorder traversal of its nodes' values.
+
 
 
 # LeetCode 202: Happy Number
@@ -47,8 +54,10 @@ Write an algorithm to determine if a number n is happy.
     Return true if n is a happy number, and false if not.
 
 
+
 # LeetCode 203 : Remove Linked List Elements
 Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+
 
 
 # LeetCode 205 : Isomorphic Strings
@@ -58,16 +67,20 @@ Two strings s and t are isomorphic if the characters in s can be replaced to get
     All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character,but a character may map to itself.
 
  
+ 
 # LeetCode 206: Reverse Linked List
 Given the head of a singly linked list, reverse the list, and return the reversed list.
+
 
 
 # LeetCode 217: Contains Duplicate
 Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
 
+
 # LeetCode 219. Contains Duplicate II
 Given an integer array nums and an integer k, return true if there are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k.
+
 
 
 # LeetCode 231: Power of Two
@@ -75,8 +88,10 @@ Given an integer n, return true if it is a power of two. Otherwise, return false
 An integer n is a power of two, if there exists an integer x such that n == 2x.
 
 
+
 # LeetCode 258: Add Digits
 Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
+
 
 
 # LeetCode 290: Word Pattern
@@ -84,9 +99,11 @@ Given a pattern and a string s, find if s follows the same pattern.
 Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.
 
 
+
 # LeetCode 326: Power of Three
 Given an integer n, return true if it is a power of three. Otherwise, return false.
 An integer n is a power of three, if there exists an integer x such that n == 3x.
+
 
 
 # LeetCode 344: Reverse String
@@ -94,9 +111,11 @@ Write a function that reverses a string. The input string is given as an array o
 You must do this by modifying the input array in-place with O(1) extra memory.
 
 
+
 # LeetCode 345: Reverse Vowels of a String
 Given a string s, reverse only all the vowels in the string and return it.
 The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both cases.
+
 
 
 # LeetCode 617: Merge Two Binary Trees
@@ -107,17 +126,29 @@ Return the merged tree.
 
     Note: The merging process must start from the root nodes of both trees.
     
-    
+  
+  
 # LeetCode 783: Minimum Distance Between BST Nodes
 Given the root of a Binary Search Tree (BST), return the minimum difference between the values of any two different nodes in the tree.
+
+
+
+# LeetCode 938: You are given two binary trees root1 and root2.
+Imagine that when you put one of them to cover the other, some nodes of the two trees are overlapped while the others are not. You need to merge the two trees into a new binary tree. The merge rule is that if two nodes overlap, then sum node values up as the new value of the merged node. Otherwise, the NOT null node will be used as the node of the new tree.
+Return the merged tree.
+
+    Note: The merging process must start from the root nodes of both trees.
+
 
 
 # LeetCode 1085: Sum of Digits in the Minimum Number
 Given an integer array nums, return 0 if the sum of the digits of the minimum integer in nums is odd, or 1 otherwise.
 
 
+
 # LeetCode 1119: Remove Vowels from a String
 Given a string s, remove the vowels 'a', 'e', 'i', 'o', and 'u' from it, and return the new string.
+
 
 
 # LeetCode 1134: Armstrong Number
@@ -125,8 +156,10 @@ Given an integer n, return true if and only if it is an Armstrong number.
 The k-digit number n is an Armstrong number if and only if the kth power of each digit sums to n.
 
 
+
 # LeetCode 2016: Maximum Difference Between Increasing Elements
 Given a 0-indexed integer array nums of size n, find the maximum difference between nums[i] and nums[j] (i.e., nums[j] - nums[i]), such that 0 <= i < j < n and nums[i] < nums[j]. Return the maximum difference. If no such i and j exists, return -1.
+
 
 
 # LeetCode 2078: Two Furthest Houses With Different Colors
