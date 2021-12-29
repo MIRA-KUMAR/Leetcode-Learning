@@ -83,6 +83,13 @@ Given an integer array nums and an integer k, return true if there are two disti
 
 
 
+# LeetCode 226: Invert Binary Tree
+Given the root of a binary tree, invert the tree, and return its root.
+        Input: root = [4,2,7,1,3,6,9]
+        Output: [4,7,2,9,6,3,1]
+            
+            
+            
 # LeetCode 231: Power of Two
 Given an integer n, return true if it is a power of two. Otherwise, return false.
 An integer n is a power of two, if there exists an integer x such that n == 2x.
