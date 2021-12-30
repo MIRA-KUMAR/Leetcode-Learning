@@ -102,6 +102,12 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
 
 
 
+# LeetCode 257: Binary Tree Paths
+Given the root of a binary tree, return all root-to-leaf paths in any order.
+A leaf is a node with no children.
+
+
+
 # LeetCode 258: Add Digits
 Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
 
