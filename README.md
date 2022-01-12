@@ -8,6 +8,11 @@ Do not allocate extra space for another array. You must do this by modifying the
 
 
 
+# LeetCode 92: Reverse Linked List II
+Given the head of a singly linked list and two integers left and right where `left <= right`, reverse the nodes of the list from `position left` to `position right`, and return the reversed list.
+
+
+
 # LeetCode 94: Binary Tree Inorder Traversal
 Given the root of a binary tree, return the inorder traversal of its nodes' values.
 
