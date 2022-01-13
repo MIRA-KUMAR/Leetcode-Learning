@@ -1,5 +1,15 @@
 # Leetcode-Learning
 
+# LeetCode 20: Valid Parentheses
+Given a string s containing just the characters `'(', ')', '{', '}', '[' and ']'`, determine if the input string is valid.
+
+An input string is valid if:
+
+    Open brackets must be closed by the same type of brackets.
+    Open brackets must be closed in the correct order.
+
+
+
 # LeetCode 27: Remove Element:
 Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The relative order of the elements may be changed.
 Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the first part of the array nums. More formally, if there are k elements after removing the duplicates, then the first k elements of nums should hold the final result. It does not matter what you leave beyond the first k elements.
