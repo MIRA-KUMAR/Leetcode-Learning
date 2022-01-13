@@ -1,0 +1,20 @@
+def isValid(s):
+    stack = []
+    mapping = {')': '(', ']': '[', '}': '{'}
+
+    for c in s:
+        if c in mapping:
+            if stack and stack[-1] == mapping[c]:
+                stack.pop()
+            else:
+                return False
+        else:
+            stack.append(c)
+
+    return True if stack == [] else False
+
+
+print(isValid("()"))
+print(isValid("()[]{}"))
+print(isValid("()[]{)"))
+print(isValid("(]"))
