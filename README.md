@@ -201,6 +201,11 @@ The k-digit number n is an Armstrong number if and only if the kth power of each
 
 
 
+# LeetCode 1886: Determine Whether Matrix Can Be Obtained By Rotation
+Given two n x n binary matrices mat and target, return true if it is possible to make mat equal to target by rotating mat in 90-degree increments, or false otherwise.
+
+
+
 # LeetCode 2016: Maximum Difference Between Increasing Elements
 Given a 0-indexed integer array nums of size n, find the maximum difference between nums[i] and nums[j] (i.e., nums[j] - nums[i]), such that 0 <= i < j < n and nums[i] < nums[j]. Return the maximum difference. If no such i and j exists, return -1.
 
