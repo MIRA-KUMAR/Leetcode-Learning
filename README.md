@@ -18,6 +18,13 @@ Do not allocate extra space for another array. You must do this by modifying the
 
 
 
+# LeetCode 48: Rotate Image:
+You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
+
+You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
+
+
+
 # LeetCode 53: Maximum Subarray
 Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
 A subarray is a contiguous part of an array.
