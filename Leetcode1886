@@ -1,0 +1,32 @@
+def findRotation(mat, target):
+    i = 0
+    while mat != target and i < 4:
+        transpose(mat)
+        rotate(mat)
+        i += 1
+    if mat == target:
+        return True
+    elif i == 4:
+        return False
+
+
+def transpose(mat):
+    n = len(mat)
+    for i in range(n):
+        for j in range(i+1, n):
+            mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
+    return mat
+
+
+def rotate(mat):
+    n = len(mat)
+    for i in range(n):
+        for j in range(n//2):
+            mat[i][-j-1], mat[i][j] = mat[i][j], mat[i][-j-1]
+    return mat
+
+
+print(findRotation([[0, 1], [1, 0]], [[1, 0], [0, 1]]))
+print(findRotation([[0, 1], [1, 1]], [[1, 0], [0, 1]]))
+print(findRotation([[0, 0, 0], [0, 1, 0], [1, 1, 1]],
+      [[1, 1, 1], [0, 1, 0], [0, 0, 0]]))
