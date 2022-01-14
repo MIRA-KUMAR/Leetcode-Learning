@@ -1,0 +1,27 @@
+def decodeString(s):
+    stack = []
+    top = -1
+    res, decodedstr = "", ""
+    for c in s:
+        if c == ']':
+            while stack[top] != '[':
+                res += stack.pop()
+            stack.pop()
+            num = ""
+            while stack and stack[-1].isdigit():
+                num = stack.pop() + num
+
+            stack.append(int(num)*res)
+
+            res = ""
+        else:
+            stack.append(c)
+
+    while stack != []:
+        decodedstr += stack.pop()
+
+    return decodedstr[::-1]
+
+
+print(decodeString("3[a]2[bc]"))
+print(decodeString("2[abc]3[cd]ef"))
