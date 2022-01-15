@@ -9,6 +9,15 @@ You can return the answer in any order.
 
 
 
+# LeetCode 9: Palindrome Number
+Given an integer x, return true if x is palindrome integer.
+
+An integer is a palindrome when it reads the same backward as forward.
+
+    For example, 121 is a palindrome while 123 is not.
+
+
+
 # LeetCode 20: Valid Parentheses
 Given a string s containing just the characters `'(', ')', '{', '}', '[' and ']'`, determine if the input string is valid.
 
