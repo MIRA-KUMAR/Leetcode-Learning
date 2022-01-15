@@ -1,0 +1,12 @@
+def twoSum(nums, target):
+    hashmap = {}
+    for i in range(len(nums)):
+        comp = target - nums[i]
+        if comp in hashmap and hashmap[comp] != i:
+            return [i, hashmap[comp]]
+        else:
+            hashmap[nums[i]] = i
+
+
+print(twoSum([2, 7, 11, 15], 9))
+print(twoSum([3, 3], 6))
