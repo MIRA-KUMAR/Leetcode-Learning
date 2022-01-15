@@ -18,6 +18,13 @@ Do not allocate extra space for another array. You must do this by modifying the
 
 
 
+# LeetCode 35: Search Insert Position:
+Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+
+You must write an algorithm with `O(log n)` runtime complexity.
+
+
+
 # LeetCode 48: Rotate Image:
 You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
 
