@@ -1,0 +1,30 @@
+def isPalindrome(x) -> bool:
+
+    # 1. Two pointers:
+    """x = str(x)
+    lp, rp = 0, len(x)-1
+    while lp <= rp:
+        if x[lp] != x[rp]:
+            return False
+        lp += 1
+        rp -= 1
+    return True"""
+
+    # 2. Reversing the number:
+    if x < 0:
+        return False
+    n = 0
+    y = x
+    while x > 0:
+
+        n = n*10 + (x % 10)
+        x = x//10
+    if y == n:
+        return True
+    else:
+        return False
+
+
+print(isPalindrome(121))
+print(isPalindrome(-121))
+print(isPalindrome(10))
