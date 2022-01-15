@@ -1,0 +1,19 @@
+def numPairsDivisibleBy60(time):
+    remainders = {}
+    pairs = 0
+    for i in time:
+        r = i % 60
+        if r == 0:
+            if r in remainders:
+                pairs += remainders[0]
+        elif 60-r in remainders:
+            pairs += remainders[60-r]
+
+        if r in remainders:
+            remainders[r] += 1
+        else:
+            remainders[r] = 1
+    return pairs
+
+
+print(numPairsDivisibleBy60([30, 20, 150, 100, 40]))
