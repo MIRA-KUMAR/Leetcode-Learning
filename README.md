@@ -87,6 +87,20 @@ Do not allocate extra space for another array. You must do this by modifying the
 
 
 
+# LeetCode 28: Implement strStr():
+
+Implement strStr().
+
+Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+Clarification:
+
+What should we return when needle is an empty string? This is a great question to ask during an interview.
+
+For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C's strstr() and Java's indexOf().
+
+
+
 # LeetCode 35: Search Insert Position:
 Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
 
