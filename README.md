@@ -41,6 +41,13 @@ Roman numerals are usually written largest to smallest from left to right. Howev
 
 
 
+# LeetCode 14: Longest Common Prefix
+Write a function to find the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string `""`.
+
+
+
 # LeetCode 20: Valid Parentheses
 Given a string s containing just the characters `'(', ')', '{', '}', '[' and ']'`, determine if the input string is valid.
 
