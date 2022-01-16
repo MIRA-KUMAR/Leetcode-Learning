@@ -135,6 +135,11 @@ Increment the large integer by one and return the resulting array of digits.
 
 
 
+# LeetCode 67: Add Binary
+Given two binary strings a and b, return their sum as a binary string.
+
+
+
 # LeetCode 92: Reverse Linked List II
 Given the head of a singly linked list and two integers left and right where `left <= right`, reverse the nodes of the list from `position left` to `position right`, and return the reversed list.
 
