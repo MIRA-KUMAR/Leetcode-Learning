@@ -128,6 +128,13 @@ A word is a maximal substring consisting of non-space characters only.
 
 
 
+# LeetCode 66: Plus One
+You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
+
+Increment the large integer by one and return the resulting array of digits.
+
+
+
 # LeetCode 92: Reverse Linked List II
 Given the head of a singly linked list and two integers left and right where `left <= right`, reverse the nodes of the list from `position left` to `position right`, and return the reversed list.
 
