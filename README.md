@@ -121,6 +121,13 @@ A subarray is a contiguous part of an array.
 
 
 
+# LeetCode 58: Length of Last Word:
+Given a string s consisting of some words separated by some number of spaces, return the length of the last word in the string.
+
+A word is a maximal substring consisting of non-space characters only.
+
+
+
 # LeetCode 92: Reverse Linked List II
 Given the head of a singly linked list and two integers left and right where `left <= right`, reverse the nodes of the list from `position left` to `position right`, and return the reversed list.
 
