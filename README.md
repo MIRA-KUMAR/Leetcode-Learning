@@ -344,6 +344,16 @@ The k-digit number n is an Armstrong number if and only if the kth power of each
 
 
 
+# LeetCode 1137: N-th Tribonacci Number
+
+The Tribonacci sequence Tn is defined as follows: 
+
+    T0 = 0, T1 = 1, T2 = 1, and Tn+3 = Tn + Tn+1 + Tn+2 for n >= 0.
+
+Given n, return the value of Tn.
+
+
+
 # LeetCode 1886: Determine Whether Matrix Can Be Obtained By Rotation
 Given two n x n binary matrices mat and target, return true if it is possible to make mat equal to target by rotating mat in 90-degree increments, or false otherwise.
 
