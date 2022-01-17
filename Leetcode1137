@@ -1,0 +1,12 @@
+def tribonacci(n):
+
+    if n < 3:
+        return 1 if n else 0
+    x, y, z = 0, 1, 1
+    for _ in range(3, n+1):
+        x, y, z = y, z, x + y + z
+    return z
+
+
+print(tribonacci(4))
+print(tribonacci(25))
