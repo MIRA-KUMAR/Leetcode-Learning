@@ -149,6 +149,13 @@ Since the return type is an integer, the decimal digits are truncated, and only 
 
 
 
+# LeetCode 70: Climbing Stairs
+You are climbing a staircase. It takes n steps to reach the top.
+
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+
+
 # LeetCode 92: Reverse Linked List II
 Given the head of a singly linked list and two integers left and right where `left <= right`, reverse the nodes of the list from `position left` to `position right`, and return the reversed list.
 
