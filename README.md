@@ -156,6 +156,20 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 
 
 
+# LeetCode 83: Remove Duplicates from Sorted List
+Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
+
+
+
+# LeetCode 88: Merge Sorted Array
+You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+
+Merge nums1 and nums2 into a single array sorted in non-decreasing order.
+
+The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
+
+
+
 # LeetCode 92: Reverse Linked List II
 Given the head of a singly linked list and two integers left and right where `left <= right`, reverse the nodes of the list from `position left` to `position right`, and return the reversed list.
 
@@ -163,6 +177,18 @@ Given the head of a singly linked list and two integers left and right where `le
 
 # LeetCode 94: Binary Tree Inorder Traversal
 Given the root of a binary tree, return the inorder traversal of its nodes' values.
+
+
+
+# LeetCode 100: Same Tree
+Given the roots of two binary trees p and q, write a function to check if they are the same or not.
+
+Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
+
+
+
+# LeetCode 101: Symmetric Tree
+Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
 
 
 
@@ -317,7 +343,16 @@ Return the merged tree.
     Note: The merging process must start from the root nodes of both trees.
     
   
-  
+
+# LeetCode 746: Min Cost Climbing Stairs
+You are given an integer array cost where cost[i] is the cost of ith step on a staircase. Once you pay the cost, you can either climb one or two steps.
+
+You can either start from the step with index 0, or the step with index 1.
+
+Return the minimum cost to reach the top of the floor.
+
+
+
 # LeetCode 783: Minimum Distance Between BST Nodes
 Given the root of a Binary Search Tree (BST), return the minimum difference between the values of any two different nodes in the tree.
 
