@@ -417,3 +417,8 @@ Given a 0-indexed integer array nums of size n, find the maximum difference betw
 There are n houses evenly lined up on the street, and each house is beautifully painted. You are given a 0-indexed integer array colors of length n, where colors[i] represents the color of the ith house.
 Return the maximum distance between two houses with different colors.
 The distance between the ith and jth houses is abs(i - j), where abs(x) is the absolute value of x.
+
+
+
+# LeetCode 2124. Check if All A's Appears Before All B's
+Given a string s consisting of only the characters 'a' and 'b', return true if every 'a' appears before every 'b' in the string. Otherwise, return false.
