@@ -1,0 +1,14 @@
+def checkString(s):
+    """c = 0
+    for i in range(0, len(s)):
+        if s[i] == 'b':
+            c = 1
+        if c == 1 and s[i] == 'a':
+            return False
+    return True"""
+
+    return "ba" not in s
+
+
+print(checkString("aaabbb"))
+print(checkString("abab"))
