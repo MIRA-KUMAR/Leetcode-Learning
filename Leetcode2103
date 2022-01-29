@@ -1,0 +1,28 @@
+from numpy import outer
+
+
+# rings = "B0B6G0R6R0R6G9"
+# output = 1        ROD 0 has all colors
+
+
+def countPoints(rings):
+    dict1 = {}
+    i = 1
+    while i < len(rings):
+        if rings[i] in dict1:
+            if rings[i-1] not in dict1[rings[i]]:
+                dict1[rings[i]].append(rings[i-1])
+        else:
+            dict1[rings[i]] = [rings[i-1]]
+        i += 2
+
+    res = 0
+    for key in dict1:
+        if len(dict1[key]) == 3:
+            res += 1
+
+    return res
+
+
+print(countPoints(rings="B0B6G0R6R0R6G9"))
+print(countPoints("B0R0G0R9R0B0G0"))
