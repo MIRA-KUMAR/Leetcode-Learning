@@ -420,6 +420,14 @@ Given n, return the value of Tn.
 
 
 
+# LeetCode 1512: Number of Good Pairs
+
+Given an array of integers nums, return the number of good pairs.
+
+A pair (i, j) is called good if nums[i] == nums[j] and i < j.
+
+
+
 # LeetCode 1886: Determine Whether Matrix Can Be Obtained By Rotation
 Given two n x n binary matrices mat and target, return true if it is possible to make mat equal to target by rotating mat in 90-degree increments, or false otherwise.
 
