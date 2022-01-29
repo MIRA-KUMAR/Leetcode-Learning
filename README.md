@@ -364,6 +364,14 @@ Furthermore, you may assume that the original data does not contain any digits a
 
 
 
+# LeetCode 577: Employee Bonus
+
+Write an SQL query to report the name and bonus amount of each employee with a bonus less than 1000.
+Return the result table in any order.
+The query result format is in the following example.
+
+
+
 # LeetCode 617: Merge Two Binary Trees
 You are given two binary trees root1 and root2.
 Imagine that when you put one of them to cover the other, some nodes of the two trees are overlapped while the others are not. You need to merge the two trees into a new binary tree. The merge rule is that if two nodes overlap, then sum node values up as the new value of the merged node. Otherwise, the NOT null node will be used as the node of the new tree.
