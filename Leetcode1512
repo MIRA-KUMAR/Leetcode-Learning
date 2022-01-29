@@ -1,0 +1,22 @@
+from collections import Counter
+from os import PRIO_USER
+
+
+def numIdenticalPairs(nums):
+    """c = 0
+    for lp in range(len(nums)):
+        for rp in range(lp+1, len(nums)):
+            if nums[lp] == nums[rp]:
+                c += 1
+
+    return c"""
+
+    count = Counter()
+    c = 0
+    for i in nums:
+        c += count[i]
+        count[i] += 1
+    return c
+
+
+print(numIdenticalPairs([1, 2, 3, 1, 1, 3]))
