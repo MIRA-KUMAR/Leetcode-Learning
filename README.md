@@ -433,6 +433,16 @@ Given two n x n binary matrices mat and target, return true if it is possible to
 
 
 
+# LeetCode 1929: Concatenation of Array
+
+Given an integer array nums of length n, you want to create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for 0 <= i < n (0-indexed).
+
+Specifically, ans is the concatenation of two nums arrays.
+
+Return the array ans.
+
+
+
 # LeetCode 2016: Maximum Difference Between Increasing Elements
 Given a 0-indexed integer array nums of size n, find the maximum difference between nums[i] and nums[j] (i.e., nums[j] - nums[i]), such that 0 <= i < j < n and nums[i] < nums[j]. Return the maximum difference. If no such i and j exists, return -1.
 
