@@ -1,0 +1,19 @@
+from os import PRIO_USER
+
+
+def sortSentence(s):
+    s = s.split()
+    print(s)
+    dict1 = {}
+    myline = ""
+    for i in s:
+        dict1[i[-1]] = i[:-1]
+
+    for i in range(len(dict1)+1):
+        if str(i+1) in dict1:
+            myline += dict1[str(i+1)] + " "
+
+    return myline[:-1]
+
+
+print(sortSentence(s="is2 sentence4 This1 a3"))
