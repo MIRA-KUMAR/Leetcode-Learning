@@ -337,6 +337,16 @@ The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both cases.
 
 
 
+# LeetCode 370: Range Addition
+
+You are given an integer length and an array updates where updates[i] = [startIdxi, endIdxi, inci].
+
+You have an array arr of length length with all zeros, and you have some operation to apply on arr. In the ith operation, you should increment all the elements arr[startIdxi], arr[startIdxi + 1], ..., arr[endIdxi] by inci.
+
+Return arr after applying all the updates.
+
+
+
 # LeetCode 394: Decode String:
 Given an encoded string, return its decoded string.
 
