@@ -467,5 +467,16 @@ The distance between the ith and jth houses is abs(i - j), where abs(x) is the a
 
 
 
+# LeetCode 2089: Find Target Indices After Sorting Array
+
+You are given a 0-indexed integer array nums and a target element target.
+
+    A target index is an index i such that nums[i] == target.
+
+Return a list of the target indices of nums after sorting nums in non-decreasing order. If there are no target indices, return an empty list. The returned list must be sorted in increasing order.
+
+
+
 # LeetCode 2124. Check if All A's Appears Before All B's
 Given a string s consisting of only the characters 'a' and 'b', return true if every 'a' appears before every 'b' in the string. Otherwise, return false.
+
