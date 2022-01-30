@@ -94,6 +94,14 @@ Notice that the solution set must not contain duplicate triplets.
 
 
 
+# LeetCode 16: 3Sum Closest
+
+Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.
+
+Return the sum of the three integers.
+
+
+
 # LeetCode 20: Valid Parentheses
 Given a string s containing just the characters `'(', ')', '{', '}', '[' and ']'`, determine if the input string is valid.
 
