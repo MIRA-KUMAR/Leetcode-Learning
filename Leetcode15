@@ -1,0 +1,56 @@
+def threeSum(nums):
+
+    # Three pointers
+    """res = []
+    nums.sort()
+    for i in range(len(nums)):
+        if nums[i] > 0:
+            break
+        elif i == 0 or nums[i] != nums[i-1]:
+            threeSumII(nums, i, res)
+
+    return res
+
+def threeSumII(nums, i, res):
+
+    lo, hi = i+1, len(nums) - 1
+    while lo < hi:
+        comp = nums[i] + nums[lo] + nums[hi]
+        if comp < 0:
+            lo += 1
+        elif comp > 0:
+            hi -= 1
+        else:
+            res.append([nums[i], nums[lo], nums[hi]])
+            lo += 1
+            hi -= 1
+            while lo < hi and nums[lo] == nums[lo-1]:
+                lo += 1"""
+
+    # Hashset:
+    res = []
+    nums.sort()
+    for i in range(len(nums)):
+        if nums[i] > 0:
+            break
+        elif i == 0 or nums[i] != nums[i-1]:
+            threeSumII(nums, i, res)
+
+    return res
+
+
+def threeSumII(nums, i, res):
+    seen = set()
+    j = i + 1
+    while j < len(nums):
+        comp = - nums[i] - nums[j]
+        if comp in seen:
+            res.append([nums[i], nums[j], comp])
+
+            while j+1 < len(nums) and nums[j] == nums[j+1]:
+                j += 1
+        seen.add(nums[j])
+        j += 1
+
+
+print(threeSum(nums=[-1, 0, 1, 2, -1, -4]))
