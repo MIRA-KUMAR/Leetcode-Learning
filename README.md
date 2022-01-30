@@ -86,6 +86,14 @@ If there is no common prefix, return an empty string `""`.
 
 
 
+# LeetCode 15: 3Sum
+
+Given an integer array nums, return all the triplets `[nums[i], nums[j], nums[k]]` such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+
+Notice that the solution set must not contain duplicate triplets.
+
+
+
 # LeetCode 20: Valid Parentheses
 Given a string s containing just the characters `'(', ')', '{', '}', '[' and ']'`, determine if the input string is valid.
 
