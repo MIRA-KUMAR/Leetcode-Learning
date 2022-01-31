@@ -303,6 +303,12 @@ Reverse bits of a given 32 bits unsigned integer.
 
 
 
+# LeetCode 191: Number of 1 Bits
+
+Write a function that takes an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight).
+
+
+
 # LeetCode 202: Happy Number
 Write an algorithm to determine if a number n is happy.
   A happy number is a number defined by the following process:
