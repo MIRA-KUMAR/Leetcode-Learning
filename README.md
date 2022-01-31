@@ -297,6 +297,12 @@ Join two tables.
 
 
 
+# LeetCode 190: Reverse Bits
+
+Reverse bits of a given 32 bits unsigned integer.
+
+
+
 # LeetCode 202: Happy Number
 Write an algorithm to determine if a number n is happy.
   A happy number is a number defined by the following process:
