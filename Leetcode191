@@ -1,0 +1,13 @@
+def hammingWeight(n):
+
+    c = 0
+    while n > 0:
+        i = str(n % 2)
+        if i == '1':
+            c += 1
+        n = n//2
+
+    return c
+
+
+print(hammingWeight(11))
