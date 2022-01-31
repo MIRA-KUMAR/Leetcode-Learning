@@ -1,0 +1,21 @@
+def reverseBits(n):
+
+    inp = ''
+    while n > 0:
+        inp += str(n % 2)
+        n = n//2
+
+    if len(inp) < 32:
+        for _ in range(len(inp)-1, 31):
+            inp += '0'
+
+    inp = inp[::-1]
+    res, p = 0, 0
+    for i in range(len(inp)):
+        res += int(inp[i]) * (2**p)
+        p += 1
+    return res
+
+
+print(reverseBits(4294967293))
+print(reverseBits(43261596))
