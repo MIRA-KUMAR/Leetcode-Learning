@@ -8,14 +8,33 @@ class TreeNode:
 
 class Solution:
     def invertTree(self, root):
+
+        # Iterative method:
+
         if not root:
-            return None
+            return root
 
-        tmp = root.left
-        root.left = root.right
-        root.right = tmp
+        stack = [root]
 
-        self.invertTree(root.left)
-        self.invertTree(root.right)
+        while stack:
+            if root:
+                root.left, root.right = root.right, root.left
+                stack.append(root.left)
+                stack.append(root.right)
+
+            root = stack.pop()
 
         return root
+
+        # Recursive method:
+        """if not root:
+            return root
+        
+        tmp = root.left
+        root. left = root.right 
+        root.right = tmp
+        
+        self.invertTree(root.left)
+        self.invertTree(root.right)
+        
+        return root"""
