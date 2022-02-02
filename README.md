@@ -418,6 +418,11 @@ An Anagram is a word or phrase formed by rearranging the letters of a different 
 
 
 
+# LeetCode 243. Shortest Word Distance
+Given an array of strings wordsDict and two different strings that already exist in the array word1 and word2, return the shortest distance between these two words in the list.
+
+
+
 # LeetCode 257: Binary Tree Paths
 Given the root of a binary tree, return all root-to-leaf paths in any order.
 A leaf is a node with no children.
