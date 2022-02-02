@@ -410,6 +410,14 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
 
 
 
+# LeetCode 242. Valid Anagram
+
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
+
+
 # LeetCode 257: Binary Tree Paths
 Given the root of a binary tree, return all root-to-leaf paths in any order.
 A leaf is a node with no children.
