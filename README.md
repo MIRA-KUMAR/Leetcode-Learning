@@ -423,6 +423,14 @@ Given an array of strings wordsDict and two different strings that already exist
 
 
 
+# LeetCode 246. Strobogrammatic Number
+
+Given a string num which represents an integer, return true if num is a strobogrammatic number.
+
+A `strobogrammatic number` is a number that looks the same when rotated 180 degrees (looked at upside down).
+
+
+
 # LeetCode 257: Binary Tree Paths
 Given the root of a binary tree, return all root-to-leaf paths in any order.
 A leaf is a node with no children.
