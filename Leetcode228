@@ -1,0 +1,23 @@
+def summaryRanges(nums):
+    start, end = 0, 1
+    nums2 = []
+    if not nums:
+        return nums
+
+    while end < len(nums):
+        if nums[end] - nums[end - 1] == 1:
+            end += 1
+        else:
+            if start == end - 1:
+                nums2.append(str(nums[start]))
+
+            else:
+                nums2.append(str(nums[start]) + "->" + str(nums[end-1]))
+            start = end
+            end = end + 1
+
+    if start == len(nums)-1:
+        nums2.append(str(nums[start]))
+    else:
+        nums2.append(str(nums[start]) + "->" + str(nums[-1]))
+    return nums2
