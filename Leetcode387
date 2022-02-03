@@ -1,0 +1,12 @@
+
+import collections
+
+
+def firstUniqChar(s):
+
+    count = collections.Counter(s)
+
+    for idx, x in enumerate(s):
+        if count[x] == 1:
+            return idx
+    return -1
