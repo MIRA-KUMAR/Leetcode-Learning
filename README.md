@@ -431,6 +431,11 @@ A `strobogrammatic number` is a number that looks the same when rotated 180 degr
 
 
 
+# LeetCode 252. Meeting Rooms
+Given an array of meeting time intervals where intervals[i] = [starti, endi], determine if a person could attend all meetings.
+
+
+
 # LeetCode 257: Binary Tree Paths
 Given the root of a binary tree, return all root-to-leaf paths in any order.
 A leaf is a node with no children.
