@@ -1,0 +1,22 @@
+def canAttendMeetings(intervals):
+    intervals.sort()
+
+    if not intervals:
+        return True
+    start, end = intervals[0]
+
+    for x in range(1, len(intervals)):
+        i, j = intervals[x]
+        if i == start or j == end:
+            return False
+
+        if (i > start and j < end) or (i < end and j > end) or (i < start and j < end) or (i < start and j > end):
+            return False
+
+        start = i
+        end = j
+    return True
+
+
+print(canAttendMeetings(intervals=[[0, 30], [5, 10], [15, 20]]))
+print(canAttendMeetings(intervals=[[7, 10], [2, 4]]))
