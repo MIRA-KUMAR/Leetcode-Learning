@@ -169,6 +169,13 @@ You have to rotate the image in-place, which means you have to modify the input 
 
 
 
+# LeetCode 49: Group Anagrams
+
+Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
+
+
 # LeetCode 53: Maximum Subarray
 Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
 A subarray is a contiguous part of an array.
