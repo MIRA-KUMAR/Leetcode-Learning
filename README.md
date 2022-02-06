@@ -182,6 +182,11 @@ A subarray is a contiguous part of an array.
 
 
 
+# LeetCode 56. Merge Intervals
+Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
+
+
+
 # LeetCode 58: Length of Last Word:
 Given a string s consisting of some words separated by some number of spaces, return the length of the last word in the string.
 
