@@ -466,6 +466,13 @@ Given an integer num, repeatedly add all its digits until the result has only on
 
 
 
+# LeetCode 283. Move Zeroes
+Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+Note that you must do this in-place without making a copy of the array.
+
+
+
 # LeetCode 290: Word Pattern
 Given a pattern and a string s, find if s follows the same pattern.
 Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.
