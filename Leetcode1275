@@ -1,0 +1,44 @@
+def tictactoe(moves):
+
+    n = 3
+    board = [[0] * n for _ in range(n)]
+
+    def check_row(row, player_id):
+        for col in range(n):
+            if board[row][col] != player_id:
+                return False
+        return True
+
+    def check_col(col, player_id):
+        for row in range(n):
+            if board[row][col] != player_id:
+                return False
+        return True
+
+    def check_diagonal(player_id):
+        for row in range(n):
+            if board[row][row] != player_id:
+                return False
+        return True
+
+    def anti_diagonal(player_id):
+        for row in range(n):
+            if board[row][n-1-row] != player_id:
+                return False
+        return True
+
+    player_id = 1
+
+    for row, col in moves:
+        board[row][col] = player_id
+
+        if check_row(row, player_id) or check_col(col, player_id) or (row == col and check_diagonal(player_id)) or (row+col == n-1 and anti_diagonal(player_id)):
+            return "A" if player_id == 1 else "B"
+
+        player_id *= -1
+
+    return "Draw" if len(moves) == n*n else "Pending"
+
+
+print(tictactoe([[0, 0], [1, 1], [2, 0], [1, 0],
+      [1, 2], [2, 1], [0, 1], [0, 2], [2, 2]]))
