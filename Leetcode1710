@@ -1,0 +1,19 @@
+def maximumUnits(boxTypes, truckSize):
+
+    boxTypes.sort(key=lambda i: i[1], reverse=True)
+
+    totalb, totalu = 0, 0
+
+    for box, units in boxTypes:
+
+        if truckSize <= box:
+            totalu += units * truckSize
+            break
+
+        totalu += box*units
+        truckSize -= box
+
+    return totalu
+
+
+print(maximumUnits(boxTypes=[[1, 3], [2, 2], [3, 1]], truckSize=4))
