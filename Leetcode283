@@ -1,0 +1,23 @@
+def moveZeroes(nums):
+
+    for i in nums:
+        if i == 0:
+            nums.remove(i)
+            nums.append(0)
+
+    return nums
+
+    """     
+    lp, rp = 0, 0
+    while rp<len(nums):
+        if nums[rp] == 0:
+            rp += 1
+        else:
+            nums[lp], nums[rp] = nums[rp], nums[lp]
+            lp += 1
+            rp += 1
+    return nums
+    """
+
+
+print(moveZeroes([0, 1, 0, 3, 12]))
