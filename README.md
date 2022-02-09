@@ -258,6 +258,12 @@ A valid BST is defined as follows:
 
 
 
+# LeetCode 99. Recover Binary Search Tree
+
+You are given the root of a binary search tree (BST), where the values of exactly two nodes of the tree were swapped by mistake. Recover the tree without changing its structure.
+
+
+
 # LeetCode 100: Same Tree
 Given the roots of two binary trees p and q, write a function to check if they are the same or not.
 
