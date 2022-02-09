@@ -1,15 +1,28 @@
 def addDigits(num):
-        
-    def addDigitsHelper(n):
-        total = 0
-        while n>0:
-            total += n%10
-            n = n//10
-        return total
-    
-    while len(str(num))!=1:
-        num = addDigitsHelper(num)
-    
-    return num
+
+    # Iterative approach:
+    """if len(str(num)) == 1:
+        return num
+
+    l = list(str(num))
+
+    while len(l) > 1:
+        num = sum(int(i) for i in l) 
+        l = list(str(num))
+
+    return num"""
+
+    # Mathematical solution
+    digit = 0
+    while num > 0:
+        digit += num % 10
+        num //= 10
+
+        if num == 0 and digit > 9:
+            num = digit
+            digit = 0
+
+    return digit
+
 
 print(addDigits(38))
