@@ -1,0 +1,22 @@
+import math
+from os import PRIO_USER
+
+
+def judgeSquareSum(c):
+    l, r = 0, int(math.sqrt(c))
+
+    while l <= r:
+        a1 = l*l
+        a2 = r*r
+        if a1 + a2 == c:
+            return True
+        elif a1 + a2 > c:
+            r -= 1
+        else:
+            l += 1
+
+    return False
+
+
+print(judgeSquareSum(5))
+print(judgeSquareSum(3))
