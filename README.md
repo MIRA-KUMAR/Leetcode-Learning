@@ -246,6 +246,18 @@ Given the root of a binary tree, return the inorder traversal of its nodes' valu
 
 
 
+# LeetCode 98. Validate Binary Search Tree
+
+Given the root of a binary tree, determine if it is a valid binary search tree (BST).
+
+A valid BST is defined as follows:
+
+    The left subtree of a node contains only nodes with keys less than the node's key.
+    The right subtree of a node contains only nodes with keys greater than the node's key.
+    Both the left and right subtrees must also be binary search trees.
+
+
+
 # LeetCode 100: Same Tree
 Given the roots of two binary trees p and q, write a function to check if they are the same or not.
 
