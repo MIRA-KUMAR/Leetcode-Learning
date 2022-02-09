@@ -509,6 +509,14 @@ The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both cases.
 
 
 
+# LeetCode 367. Valid Perfect Square
+
+Given a positive integer num, write a function which returns True if num is a perfect square else False.
+
+Follow up: Do not use any built-in library function such as sqrt.
+
+
+
 # LeetCode 370: Range Addition
 
 You are given an integer length and an array updates where updates[i] = [startIdxi, endIdxi, inci].
