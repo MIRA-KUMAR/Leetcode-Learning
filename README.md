@@ -567,7 +567,13 @@ Return the merged tree.
     Note: The merging process must start from the root nodes of both trees.
     
   
-  
+
+# LeetCode 633. Sum of Square Numbers
+
+Given a non-negative integer c, decide whether there're two integers a and b such that `a2 + b2 = c`.
+
+
+
 # LeetCode 696. Count Binary Substrings
 
 Give a binary string s, return the number of non-empty substrings that have the same number of 0's and 1's, and all the 0's and all the 1's in these substrings are grouped consecutively.
