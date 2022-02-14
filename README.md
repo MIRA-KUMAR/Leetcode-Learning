@@ -222,6 +222,13 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 
 
 
+# LeetCode 78. Subsets
+Given an integer array nums of unique elements, return all possible subsets (the power set).
+
+The solution set must not contain duplicate subsets. Return the solution in any order.
+
+
+
 # LeetCode 79. Word Search
 Given an m x n grid of characters board and a string word, return true if word exists in the grid.
 
