@@ -1,0 +1,9 @@
+def subsets(nums):
+
+    output = [[]]
+    for num in nums:
+        output += [[num] + cur for cur in output]
+    return output
+
+
+print(subsets(nums=[1, 2, 3]))
