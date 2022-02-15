@@ -498,6 +498,13 @@ Given an integer num, repeatedly add all its digits until the result has only on
 
 
 
+# LeetCode 263. Ugly Number
+An ugly number is a positive integer whose prime factors are limited to 2, 3, and 5.
+
+Given an integer n, return true if n is an ugly number.
+
+
+
 # LeetCode 283. Move Zeroes
 Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
