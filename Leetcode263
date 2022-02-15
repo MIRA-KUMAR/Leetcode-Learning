@@ -1,0 +1,14 @@
+def isUgly(n):
+    d = [2, 3, 5]
+    if n < 1:
+        return False
+
+    for i in d:
+        while n % i == 0:
+            n //= i
+    return n == 1
+
+
+print(isUgly(6))
+print(isUgly(1))
+print(isUgly(14))
