@@ -543,6 +543,18 @@ Here follow means a full match, such that there is a bijection between a letter 
 
 
 
+# LeetCode 292. Nim Game
+You are playing the following Nim Game with your friend:
+
+    Initially, there is a heap of stones on the table.
+    You and your friend will alternate taking turns, and you go first.
+    On each turn, the person whose turn it is will remove 1 to 3 stones from the heap.
+    The one who removes the last stone is the winner.
+    
+Given n, the number of stones in the heap, return true if you can win the game assuming both you and your friend play optimally, otherwise return false.
+
+
+
 # LeetCode 326: Power of Three
 Given an integer n, return true if it is a power of three. Otherwise, return false.
 An integer n is a power of three, if there exists an integer x such that n == 3x.
