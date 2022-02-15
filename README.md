@@ -505,6 +505,11 @@ Given an integer n, return true if n is an ugly number.
 
 
 
+# LeetCode 266. Palindrome Permutation
+Given a string s, return true if a permutation of the string could form a palindrome.
+
+
+
 # LeetCode 283. Move Zeroes
 Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
