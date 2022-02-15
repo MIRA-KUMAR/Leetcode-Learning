@@ -510,6 +510,11 @@ Given a string s, return true if a permutation of the string could form a palind
 
 
 
+# LeetCode 268. Missing Number
+Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+
+
+
 # LeetCode 283. Move Zeroes
 Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
