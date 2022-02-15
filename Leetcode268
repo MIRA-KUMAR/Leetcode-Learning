@@ -1,0 +1,14 @@
+def missingNumber(nums):
+    """nums.sort()
+
+    for i in range(len(nums)):
+        if nums[i] != i:
+            return i
+
+    return i+1"""
+
+    num_set = set(nums)
+
+    for i in range(len(nums)+1):
+        if i not in num_set:
+            return i
