@@ -1,0 +1,16 @@
+def firstBadVersion(n) -> int:
+
+    # for i in range(1, n+1):
+    #     if isBadVersion(i): return i
+
+    l, r = 1, n
+    while l <= r:
+        mid = (l+r)//2
+
+        if isBadVersion(mid):
+            r = mid - 1
+
+        else:
+            l = mid + 1
+
+    return l
