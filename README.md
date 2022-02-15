@@ -515,6 +515,21 @@ Given an array nums containing n distinct numbers in the range [0, n], return th
 
 
 
+# LeetCode 270. Closest Binary Search Tree Value
+Given the root of a binary search tree and a target value, return the value in the BST that is closest to the target.
+
+
+
+# LeetCode 278. First Bad Version
+
+You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.
+
+Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one, which causes all the following ones to be bad.
+
+You are given an API bool isBadVersion(version) which returns whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.
+
+
+
 # LeetCode 283. Move Zeroes
 Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
@@ -525,6 +540,18 @@ Note that you must do this in-place without making a copy of the array.
 # LeetCode 290: Word Pattern
 Given a pattern and a string s, find if s follows the same pattern.
 Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.
+
+
+
+# LeetCode 292. Nim Game
+You are playing the following Nim Game with your friend:
+
+    Initially, there is a heap of stones on the table.
+    You and your friend will alternate taking turns, and you go first.
+    On each turn, the person whose turn it is will remove 1 to 3 stones from the heap.
+    The one who removes the last stone is the winner.
+    
+Given n, the number of stones in the heap, return true if you can win the game assuming both you and your friend play optimally, otherwise return false.
 
 
 
