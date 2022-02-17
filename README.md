@@ -634,6 +634,17 @@ Furthermore, you may assume that the original data does not contain any digits a
 
 
 
+# LeetCode 412. Fizz Buzz
+
+Given an integer n, return a string array answer (1-indexed) where:
+
+    answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
+    answer[i] == "Fizz" if i is divisible by 3.
+    answer[i] == "Buzz" if i is divisible by 5.
+    answer[i] == i (as a string) if none of the above conditions are true.
+
+
+
 # LeetCode 577: Employee Bonus
 
 Write an SQL query to report the name and bonus amount of each employee with a bonus less than 1000.
