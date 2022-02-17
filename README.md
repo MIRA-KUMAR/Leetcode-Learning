@@ -571,6 +571,16 @@ Given n, the number of stones in the heap, return true if you can win the game a
 
 
 
+# LeetCode 293. Flip Game
+
+You are playing a Flip Game with your friend.
+
+You are given a string currentState that contains only '+' and '-'. You and your friend take turns to flip two consecutive "++" into "--". The game ends when a person can no longer make a move, and therefore the other person will be the winner.
+
+Return all possible states of the string currentState after one valid move. You may return the answer in any order. If there is no valid move, return an empty list [].
+
+
+
 # LeetCode 326: Power of Three
 Given an integer n, return true if it is a power of three. Otherwise, return false.
 An integer n is a power of three, if there exists an integer x such that n == 3x.
