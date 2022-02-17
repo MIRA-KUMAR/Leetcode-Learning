@@ -122,6 +122,12 @@ Return the head of the merged linked list.
 
 
 
+# LeetCode 24. Swap Nodes in Pairs
+Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
+
+
+
+
 # LeetCode 26: Remove Duplicates from Sorted Array
 Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
 
