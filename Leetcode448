@@ -9,3 +9,6 @@ def findDisappearedNumbers(nums):
             res.append(i)
 
     return res
+
+
+print(findDisappearedNumbers(nums=[4, 3, 2, 7, 8, 2, 3, 1]))
