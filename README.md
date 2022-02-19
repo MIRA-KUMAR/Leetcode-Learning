@@ -655,6 +655,14 @@ Given an integer n, return a string array answer (1-indexed) where:
 
 
 
+# LeetCode 445. Assign Cookies
+
+Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie.
+
+Each child i has a greed factor g[i], which is the minimum size of a cookie that the child will be content with; and each cookie j has a size s[j]. If s[j] >= g[i], we can assign the cookie j to the child i, and the child i will be content. Your goal is to maximize the number of your content children and output the maximum number.
+
+
+
 # LeetCode 448. Find All Numbers Disappeared in an Array
 
 Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
