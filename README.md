@@ -650,6 +650,12 @@ Given an integer n, return a string array answer (1-indexed) where:
 
 
 
+# LeetCode 448. Find All Numbers Disappeared in an Array
+
+Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
+
+
+
 # LeetCode 577: Employee Bonus
 
 Write an SQL query to report the name and bonus amount of each employee with a bonus less than 1000.
