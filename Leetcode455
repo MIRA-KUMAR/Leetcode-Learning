@@ -1,0 +1,20 @@
+from distutils.spawn import find_executable
+
+
+def findContentChildren(g, s):
+
+    g.sort()
+    s.sort()
+    count = 0
+
+    i_g, i_s = 0, 0
+    while i_g < len(g) and i_s < len(s):
+        if s[i_s] >= g[i_g]:
+            count += 1
+            i_g, i_s = i_g+1, i_s+1
+        else:
+            i_s += 1
+    return count
+
+
+print(findContentChildren(g=[1, 2, 3], s=[1, 1]))
