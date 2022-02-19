@@ -1,0 +1,16 @@
+def removeKdigits(num, k):
+    numStack = []
+
+    for digit in num:
+        while k and numStack and numStack[-1] > digit:
+            numStack.pop()
+            k -= 1
+        numStack.append(digit)
+
+    fullStack = numStack[:-k] if k else numStack
+
+    return "".join(numStack).lstrip('0') or '0'
+
+
+print(removeKdigits('10', 2))
+print(removeKdigits(num="1432219", k=3))
