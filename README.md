@@ -639,6 +639,11 @@ Furthermore, you may assume that the original data does not contain any digits a
 
 
 
+# LeetCode 402. Remove K Digits
+Given string num representing a non-negative integer num, and an integer k, return the smallest possible integer after removing k digits from num.
+
+
+
 # LeetCode 412. Fizz Buzz
 
 Given an integer n, return a string array answer (1-indexed) where:
