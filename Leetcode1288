@@ -1,0 +1,19 @@
+def removeCoveredIntervals(intervals):
+
+    intervals.sort(key=lambda x: x[0], reverse=False)
+    intervals.sort(key=lambda x: x[1], reverse=True)
+
+    start, end = intervals[0]
+    count = 0
+
+    for i, j in intervals[1:]:
+        if i >= start and j <= end:
+            count += 1
+
+        else:
+            start, end = i, j
+
+    return len(intervals) - count
+
+
+print(removeCoveredIntervals(intervals=[[1, 4], [3, 6], [2, 8]]))
