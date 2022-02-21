@@ -1,0 +1,15 @@
+def productExceptSelf(nums):
+
+    output = [1 for _ in range(len(nums))]
+
+    prefix = 1
+    for i in range(len(nums)):
+        output[i] = output[i]*prefix
+        prefix = prefix * nums[i]
+
+    postfix = 1
+    for j in range(len(nums)-1, -1, -1):
+        output[j] = output[j]*postfix
+        postfix = postfix * nums[j]
+
+    return output
