@@ -1,0 +1,20 @@
+def reverse(x):
+    sign = 1
+    if x == 0:
+        return 0
+
+    if x < 0:
+        sign = -1
+        x = sign*x
+
+    res = ""
+    while x > 0:
+        res += str(x % 10)
+        if (sign == -1 and int(res) <= -2**31) or int(res) >= 2**31 - 1:
+            return 0
+        x //= 10
+
+    return sign*int(res)
+
+
+print(reverse(-123))
