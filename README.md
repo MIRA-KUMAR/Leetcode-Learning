@@ -789,6 +789,16 @@ You can assume that moves is valid (i.e., it follows the rules of Tic-Tac-Toe), 
 
 
 
+# LeetCode 1288. Remove Covered Intervals
+
+Given an array intervals where intervals[i] = [li, ri] represent the interval [li, ri), remove all intervals that are covered by another interval in the list.
+
+The interval [a, b) is covered by the interval [c, d) if and only if c <= a and b <= d.
+
+Return the number of remaining intervals.
+
+
+
 # LeetCode 1512: Number of Good Pairs
 
 Given an array of integers nums, return the number of good pairs.
