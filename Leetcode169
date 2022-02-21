@@ -1,0 +1,12 @@
+def majorityElement(nums):
+    count = {}
+
+    for i in nums:
+        count[i] = count.setdefault(i, 0) + 1
+
+    for key, val in count.items():
+        if val > len(nums)/2:
+            return key
+
+
+print(majorityElement(nums=[3, 2, 3]))
