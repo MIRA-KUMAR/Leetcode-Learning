@@ -44,6 +44,12 @@ Given a signed 32-bit integer x, return x with its digits reversed. If reversing
 
 
 
+# LeetCode 8. String to Integer (atoi)
+
+Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer (similar to C/C++'s atoi function).
+
+
+
 # LeetCode 9: Palindrome Number
 Given an integer x, return true if x is palindrome integer.
 
