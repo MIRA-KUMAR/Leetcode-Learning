@@ -635,6 +635,12 @@ You can either start from the step with index 0, or the step with index 1.
 
 Return the minimum cost to reach the top of the floor.
 
+# LeetCode 771. Jewels and Stones
+
+You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
+
+Letters are case sensitive, so "a" is considered a different type of stone from "A".
+
 # LeetCode 783: Minimum Distance Between BST Nodes
 
 Given the root of a Binary Search Tree (BST), return the minimum difference between the values of any two different nodes in the tree.
