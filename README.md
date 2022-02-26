@@ -710,6 +710,12 @@ The interval [a, b) is covered by the interval [c, d) if and only if c <= a and 
 
 Return the number of remaining intervals.
 
+# LeetCode 1470. Shuffle the Array
+
+Given the array nums consisting of 2n elements in the form `[x1,x2,...,xn,y1,y2,...,yn]`.
+
+Return the array in the form `[x1,y1,x2,y2,...,xn,yn]`.
+
 # LeetCode 1512: Number of Good Pairs
 
 Given an array of integers nums, return the number of good pairs.
