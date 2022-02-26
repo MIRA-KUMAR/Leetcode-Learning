@@ -1,0 +1,11 @@
+def numJewelsInStones(jewels, stones):
+
+    jewels = set(jewels)
+    count = 0
+    for c in stones:
+        if c in jewels:
+            count += 1
+    return count
+
+
+print(numJewelsInStones(jewels="aA", stones="aAAbbbb"))
