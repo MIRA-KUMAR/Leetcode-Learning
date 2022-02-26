@@ -1,0 +1,15 @@
+def buildArray(nums):
+
+    res = []
+
+    def recur(i):
+        return nums[nums[i]]
+
+    for i in range(len(nums)):
+        res.append(recur(i))
+
+    return res
+
+
+print(buildArray(nums=[0, 2, 1, 5, 3, 4]))
+print(buildArray(nums=[5, 0, 1, 2, 3, 4]))
