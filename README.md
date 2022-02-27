@@ -726,6 +726,10 @@ Given head which is a reference node to a singly-linked list. The value of each 
 
 Return the decimal value of the number in the linked list.
 
+# LeetCode 1295. Find Numbers with Even Number of Digits
+
+Given an array nums of integers, return how many of them contain an even number of digits.
+
 # LeetCode 1470. Shuffle the Array
 
 Given the array nums consisting of 2n elements in the form `[x1,x2,...,xn,y1,y2,...,yn]`.
