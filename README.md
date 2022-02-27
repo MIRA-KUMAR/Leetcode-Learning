@@ -602,6 +602,10 @@ Each child i has a greed factor g[i], which is the minimum size of a cookie that
 
 Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
 
+# LeetCode 557. Reverse Words in a String III
+
+Given a string s, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
+
 # LeetCode 577: Employee Bonus
 
 Write an SQL query to report the name and bonus amount of each employee with a bonus less than 1000.
