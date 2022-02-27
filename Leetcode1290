@@ -1,0 +1,17 @@
+def getDecimalValue(head):
+
+    res = []
+    while head:
+        res.append(head.val)
+        head = head.next
+
+    output = 0
+    po = 0
+
+    for i in range(len(res)-1, -1, -1):
+
+        output = output + res[i]*(2**po)
+        # print(output)
+        po += 1
+
+    return output
