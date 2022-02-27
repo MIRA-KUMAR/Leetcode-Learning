@@ -1,0 +1,12 @@
+def reverseWords(s):
+    res = s.split(' ')
+    output = ""
+    for w in res:
+        output += w[::-1]
+        output += " "
+
+    return output[:len(output)-1]
+
+
+print(reverseWords(s="Let's take LeetCode contest"))
+print(reverseWords(s="God Ding"))
