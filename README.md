@@ -598,6 +598,12 @@ Given an integer n, return a string array answer (1-indexed) where:
     answer[i] == "Buzz" if i is divisible by 5.
     answer[i] == i (as a string) if none of the above conditions are true.
 
+# LeetCode 415. Add Strings
+
+Given two non-negative integers, num1 and num2 represented as string, return the sum of num1 and num2 as a string.
+
+You must solve the problem without using any built-in library for handling large integers (such as BigInteger). You must also not convert the inputs to integers directly.
+
 # LeetCode 445. Assign Cookies
 
 Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie.
