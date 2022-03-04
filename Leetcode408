@@ -1,0 +1,24 @@
+def validWordAbbreviation(word, abbr):
+    i, c = 0, 0
+    while c < len(abbr):
+        if i == len(word):
+            return False
+
+        if abbr[c].isalpha():
+            if abbr[c] != word[i]:
+                return False
+            i += 1
+            c += 1
+        else:
+            if abbr[c] == '0':
+                return False
+            n = 0
+            while c < len(abbr) and abbr[c].isdigit():
+                n = n*10 + int(abbr[c])
+                c += 1
+            i += n
+
+    return i == len(word)
+
+
+print(validWordAbbreviation(word="internationalization", abbr="i12iz4n"))
