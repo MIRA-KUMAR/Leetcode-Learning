@@ -651,6 +651,14 @@ Each child i has a greed factor g[i], which is the minimum size of a cookie that
 
 Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
 
+# LeetCode 543. Diameter of Binary Tree
+
+Given the root of a binary tree, return the length of the diameter of the tree.
+
+The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.
+
+The length of a path between two nodes is represented by the number of edges between them.
+
 # LeetCode 557. Reverse Words in a String III
 
 Given a string s, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
