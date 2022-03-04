@@ -559,6 +559,15 @@ You must do this by modifying the input array in-place with O(1) extra memory.
 Given a string s, reverse only all the vowels in the string and return it.
 The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both cases.
 
+# LeetCode 346. Moving Average from Data Stream
+
+Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.
+
+Implement the MovingAverage class:
+
+    MovingAverage(int size) Initializes the object with the size of the window size.
+    double next(int val) Returns the moving average of the last size values of the stream.
+
 # LeetCode 350. Intersection of Two Arrays II
 
 Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must appear as many times as it shows in both arrays and you may return the result in any order.
