@@ -1,0 +1,12 @@
+def isPalindrome(s):
+
+    check = ""
+    for c in s:
+        if c.isalpha() or c.isdigit():
+            check += c
+
+    check = check.lower()
+    return check == check[::-1]
+
+
+print(isPalindrome(s="A man, a plan, a canal: Panama"))
