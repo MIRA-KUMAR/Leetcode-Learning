@@ -214,6 +214,10 @@ Given a string s consisting of some words separated by some number of spaces, re
 
 A word is a maximal substring consisting of non-space characters only.
 
+# LeetCode 61. Rotate List
+
+Given the head of a linked list, rotate the list to the right by k places.
+
 # LeetCode 66: Plus One
 
 You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
