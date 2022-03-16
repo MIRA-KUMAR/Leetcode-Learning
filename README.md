@@ -376,6 +376,19 @@ Given the root of a binary tree, return the postorder traversal of its nodes' va
 
 Given the heads of two singly linked-lists headA and headB, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null.
 
+# LeetCode 163. Missing Ranges
+
+You are given an inclusive range [lower, upper] and a sorted unique integer array nums, where all elements are in the inclusive range.
+
+A number x is considered missing if x is in the range [lower, upper] and x is not in nums.
+
+Return the smallest sorted list of ranges that cover every missing number exactly. That is, no element of nums is in any of the ranges, and each missing number is in one of the ranges.
+
+Each range [a,b] in the list should be output as:
+
+    "a->b" if a != b
+    "a" if a == b
+
 # LeetCode 169. Majority Element
 
 Given an array nums of size n, return the majority element.
