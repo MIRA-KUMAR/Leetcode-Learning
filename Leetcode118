@@ -1,0 +1,16 @@
+def generate(numRows):
+
+    output = []
+    for i in range(numRows):
+        new = []
+        for j in range(0, i + 1):
+            if (i == j or i + j == i):
+                new.append(1)
+            else:
+                new.append(output[i-1][j-1] + output[i-1][j])
+        output.append(new)
+
+    return output
+
+
+print(generate(5))
