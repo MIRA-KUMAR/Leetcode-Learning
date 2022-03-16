@@ -372,6 +372,10 @@ Given the root of a binary tree, return the preorder traversal of its nodes' val
 
 Given the root of a binary tree, return the postorder traversal of its nodes' values.
 
+# LeetCode 160. Intersection of Two Linked Lists
+
+Given the heads of two singly linked-lists headA and headB, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null.
+
 # LeetCode 169. Majority Element
 
 Given an array nums of size n, return the majority element.
