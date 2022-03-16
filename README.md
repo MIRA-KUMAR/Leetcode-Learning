@@ -309,6 +309,14 @@ A binary tree's maximum depth is the number of nodes along the longest path from
 Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree.
 A height-balanced binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.
 
+# LeetCode 110. Balanced Binary Tree
+
+Given a binary tree, determine if it is height-balanced.
+
+For this problem, a height-balanced binary tree is defined as:
+
+    a binary tree in which the left and right subtrees of every node differ in height by no more than 1.
+
 # LeetCode 111: Minimum Depth of Binary Tree
 
 Given a binary tree, find its minimum depth.
