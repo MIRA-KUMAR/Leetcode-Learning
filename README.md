@@ -328,6 +328,12 @@ Given the root of a binary tree and an integer targetSum, return true if the tre
 
 A leaf is a node with no children.
 
+# LeetCode 118. Pascal's Triangle
+
+Given an integer numRows, return the first numRows of Pascal's triangle.
+
+In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
+
 # LeetCode 121: Best Time to Buy and Sell Stock
 
 You are given an array prices where prices[i] is the price of a given stock on the ith day.
