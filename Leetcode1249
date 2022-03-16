@@ -1,0 +1,31 @@
+import enum
+
+
+def minRemoveToMakeValid(s):
+    stack = []
+    ind = set()
+
+    for i, c in enumerate(s):
+        if c != '(' and c != ')':
+            continue
+        elif c == '(':
+            stack.append(i)
+        elif not stack:
+            ind.add(i)
+        else:
+            stack.pop()
+
+    ind = ind.union(set(stack))
+
+    string = []
+    for i, c in enumerate(s):
+        if i not in ind:
+            string.append(c)
+
+    return "".join(string)
+
+
+print(minRemoveToMakeValid(
+    "))((")
+)
+print(minRemoveToMakeValid("lee(t(c)o)de)"))
