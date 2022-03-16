@@ -214,6 +214,10 @@ Given a string s consisting of some words separated by some number of spaces, re
 
 A word is a maximal substring consisting of non-space characters only.
 
+# LeetCode 61. Rotate List
+
+Given the head of a linked list, rotate the list to the right by k places.
+
 # LeetCode 66: Plus One
 
 You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
@@ -761,6 +765,18 @@ The Tribonacci sequence Tn is defined as follows:
     T0 = 0, T1 = 1, T2 = 1, and Tn+3 = Tn + Tn+1 + Tn+2 for n >= 0.
 
 Given n, return the value of Tn.
+
+# LeetCode 1249. Minimum Remove to Make Valid Parentheses
+
+Given a string s of '(' , ')' and lowercase English characters.
+
+Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions ) so that the resulting parentheses string is valid and return any valid string.
+
+Formally, a parentheses string is valid if and only if:
+
+    It is the empty string, contains only lowercase characters, or
+    It can be written as AB (A concatenated with B), where A and B are valid strings, or
+    It can be written as (A), where A is a valid string.
 
 # LeetCode 1275. Find Winner on a Tic Tac Toe Game
 
