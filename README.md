@@ -595,6 +595,10 @@ You are given a string currentState that contains only '+' and '-'. You and your
 
 Return all possible states of the string currentState after one valid move. You may return the answer in any order. If there is no valid move, return an empty list [].
 
+# LeetCode 316. Remove Duplicate Letters
+
+Given a string s, remove duplicate letters so that every letter appears once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
+
 # LeetCode 326: Power of Three
 
 Given an integer n, return true if it is a power of three. Otherwise, return false.
