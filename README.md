@@ -571,6 +571,14 @@ Given an integer array nums, move all 0's to the end of it while maintaining the
 
 Note that you must do this in-place without making a copy of the array.
 
+# LeetCode 287. Find the Duplicate Number
+
+Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
+
+There is only one repeated number in nums, return this repeated number.
+
+You must solve the problem without modifying the array nums and uses only constant extra space.
+
 # LeetCode 290: Word Pattern
 
 Given a pattern and a string s, find if s follows the same pattern.
