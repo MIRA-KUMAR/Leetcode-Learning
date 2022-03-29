@@ -1,0 +1,36 @@
+# 1. Using Floyd's method:
+
+"""def getIntersect(tortoise, hare):
+    while hare and hare.next:
+        tortoise = tortoise.next
+        hare = hare.next.next
+        if tortoise == hare:
+            return tortoise
+    return None
+
+def detectCycle( head):
+    if not head:
+        return None
+    tortoise, hare = head, head
+    intersect = getIntersect(tortoise, hare)
+    if intersect == None:
+        return None
+    pointer = head
+    while pointer != intersect:
+        pointer = pointer.next
+        intersect = intersect.next
+    return pointer"""
+
+# 2. Using Hashset:
+
+
+def detectCycle(head):
+    dup = set()
+    if not head:
+        return None
+    while head:
+        if head in dup:
+            return head
+        dup.add(head)
+        head = head.next
+    return None
