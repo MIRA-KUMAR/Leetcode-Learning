@@ -637,6 +637,10 @@ Implement the MovingAverage class:
     MovingAverage(int size) Initializes the object with the size of the window size.
     double next(int val) Returns the moving average of the last size values of the stream.
 
+# LeetCode 347. Top K Frequent Elements
+
+Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+
 # LeetCode 350. Intersection of Two Arrays II
 
 Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must appear as many times as it shows in both arrays and you may return the result in any order.
