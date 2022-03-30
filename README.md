@@ -124,6 +124,12 @@ Given an integer array nums of length n and an integer target, find three intege
 
 Return the sum of the three integers.
 
+# LeetCode 17. Letter Combinations of a Phone Number
+
+Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
+
+A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
+
 # LeetCode 20: Valid Parentheses
 
 Given a string s containing just the characters `'(', ')', '{', '}', '[' and ']'`, determine if the input string is valid.
