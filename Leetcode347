@@ -1,0 +1,23 @@
+def topKFrequent(nums, k):
+    # Input: nums = [1,1,1,2,2,3], k = 2
+    # Output: [1,2]
+
+    count = {}
+    for num in nums:
+        count[num] = 1 + count.get(num, 0)
+
+    freq = [[] for i in range(len(nums) + 1)]
+
+    for n, c in count.items():
+        freq[c].append(n)
+
+    res = []
+    for i in range(len(freq)-1, -1, -1):
+        for n in freq[i]:
+            res.append(n)
+            if len(res) == k:
+                return res
+    print(res)
+
+
+print(topKFrequent(nums=[1, 1, 1, 2, 2, 3], k=2))
