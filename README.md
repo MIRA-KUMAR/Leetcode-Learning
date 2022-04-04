@@ -905,6 +905,12 @@ You are also given an integer truckSize, which is the maximum number of boxes th
 
 Return the maximum total number of units that can be put on the truck.
 
+# LeetCode 1721. Swapping Nodes in a Linked List
+
+You are given the head of a linked list, and an integer k.
+
+Return the head of the linked list after swapping the values of the kth node from the beginning and the kth node from the end (the list is 1-indexed).
+
 # LeetCode 1859: Sorting the Sentence
 
 A sentence is a list of words that are separated by a single space with no leading or trailing spaces. Each word consists of lowercase and uppercase English letters.
