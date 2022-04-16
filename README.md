@@ -765,6 +765,19 @@ Given a non-negative integer c, decide whether there're two integers a and b suc
 
 Given a string s, return true if the s can be palindrome after deleting at most one character from it.
 
+# LeetCode 682. Baseball Game
+
+You are keeping score for a baseball game with strange rules. The game consists of several rounds, where the scores of past rounds may affect future rounds' scores.
+
+At the beginning of the game, you start with an empty record. You are given a list of strings ops, where ops[i] is the ith operation you must apply to the record and is one of the following:
+
+    An integer x - Record a new score of x.
+    "+" - Record a new score that is the sum of the previous two scores. It is guaranteed there will always be two previous scores.
+    "D" - Record a new score that is double the previous score. It is guaranteed there will always be a previous score.
+    "C" - Invalidate the previous score, removing it from the record. It is guaranteed there will always be a previous score.
+    
+Return the sum of all the scores on the record.
+
 # LeetCode 696. Count Binary Substrings
 
 Give a binary string s, return the number of non-empty substrings that have the same number of 0's and 1's, and all the 0's and all the 1's in these substrings are grouped consecutively.
@@ -904,6 +917,12 @@ You are assigned to put some amount of boxes onto one truck. You are given a 2D 
 You are also given an integer truckSize, which is the maximum number of boxes that can be put on the truck. You can choose any boxes to put on the truck as long as the number of boxes does not exceed truckSize.
 
 Return the maximum total number of units that can be put on the truck.
+
+# LeetCode 1721. Swapping Nodes in a Linked List
+
+You are given the head of a linked list, and an integer k.
+
+Return the head of the linked list after swapping the values of the kth node from the beginning and the kth node from the end (the list is 1-indexed).
 
 # LeetCode 1859: Sorting the Sentence
 
