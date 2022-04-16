@@ -790,6 +790,12 @@ Give a binary string s, return the number of non-empty substrings that have the 
 
 Substrings that occur multiple times are counted the number of times they occur.
 
+# LeetCode 700. Search in a Binary Search Tree
+
+You are given the root of a binary search tree (BST) and an integer val.
+
+Find the node in the BST that the node's value equals val and return the subtree rooted with that node. If such a node does not exist, return null.
+
 # LeetCode 746: Min Cost Climbing Stairs
 
 You are given an integer array cost where cost[i] is the cost of ith step on a staircase. Once you pay the cost, you can either climb one or two steps.
