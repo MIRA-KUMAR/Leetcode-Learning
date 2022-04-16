@@ -1,0 +1,17 @@
+def trimBST(root, low, high):
+    if not root:
+        return None
+
+    def trim(node):
+        if not node:
+            return None
+        if node.val < low:
+            return trim(node.right)
+        elif node.val > high:
+            return trim(node.left)
+        else:
+            node.left = trim(node.left)
+            node.right = trim(node.right)
+            return node
+
+    return trim(root)
