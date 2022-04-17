@@ -1,0 +1,26 @@
+import collections
+
+
+class Solution:
+    def validPath(self, n, edges, source, destination):
+        d = collections.defaultdict(list)
+
+        for n1, n2 in edges:
+            d[n1].append(n2)
+            d[n2].append(n1)
+
+        visited = set()
+
+        def dfs(node):
+            if node == destination:
+                return True
+
+            if node not in visited:
+                visited.add(node)
+                for neighbour in d[node]:
+                    res = dfs(neighbour)
+
+                    if res:
+                        return True
+
+        return dfs(source)
