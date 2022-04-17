@@ -984,6 +984,14 @@ Specifically, ans is the concatenation of two nums arrays.
 
 Return the array ans.
 
+# LeetCode 1971. Find if Path Exists in Graph
+
+There is a bi-directional graph with n vertices, where each vertex is labeled from 0 to n - 1 (inclusive). The edges in the graph are represented as a 2D integer array edges, where each edges[i] = [ui, vi] denotes a bi-directional edge between vertex ui and vertex vi. Every vertex pair is connected by at most one edge, and no vertex has an edge to itself.
+
+You want to determine if there is a valid path that exists from vertex source to vertex destination.
+
+Given edges and the integers n, source, and destination, return true if there is a valid path from source to destination, or false otherwise.
+
 # LeetCode 2016: Maximum Difference Between Increasing Elements
 
 Given a 0-indexed integer array nums of size n, find the maximum difference between nums[i] and nums[j] (i.e., nums[j] - nums[i]), such that 0 <= i < j < n and nums[i] < nums[j]. Return the maximum difference. If no such i and j exists, return -1.
