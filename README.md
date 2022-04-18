@@ -496,6 +496,10 @@ Each range [a,b] in the list should be output as:
     "a->b" if a != b
     "a" if a == b
 
+# LeetCode 230. Kth Smallest Element in a BST
+
+Given the root of a binary search tree, and an integer k, return the kth smallest value (1-indexed) of all the values of the nodes in the tree.
+
 # LeetCode 231: Power of Two
 
 Given an integer n, return true if it is a power of two. Otherwise, return false.
