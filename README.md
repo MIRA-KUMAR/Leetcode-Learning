@@ -513,6 +513,16 @@ Given the root of a binary tree, invert the tree, and return its root.
 Input: root = [4,2,7,1,3,6,9]
 Output: [4,7,2,9,6,3,1]
 
+# LeetCode 227. Basic Calculator II
+
+Given a string s which represents an expression, evaluate this expression and return its value. 
+
+The integer division should truncate toward zero.
+
+You may assume that the given expression is always valid. All intermediate results will be in the range of [-231, 231 - 1].
+
+    Note: You are not allowed to use any built-in function which evaluates strings as mathematical expressions, such as eval().
+
 # LeetCode 228: Summary Ranges
 
 You are given a sorted unique integer array nums.
