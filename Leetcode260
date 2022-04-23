@@ -1,0 +1,15 @@
+from collections import Counter
+
+
+def singleNumber(nums):
+    """repeat = {}
+    for i in nums:
+        repeat[i] = 1 + repeat.setdefault(i, 0)
+    res = []
+    for k, v in repeat.items():
+        if v == 1:
+            res.append(k)
+    return res"""
+
+    rep = Counter(nums)
+    return [k for k, v in rep.items() if v == 1]
