@@ -228,6 +228,12 @@ A word is a maximal substring consisting of non-space characters only.
 
 Given the head of a linked list, rotate the list to the right by k places.
 
+# LeetCode 64. Minimum Path Sum
+
+Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right, which minimizes the sum of all numbers along its path.
+
+    Note: You can only move either down or right at any point in time.
+
 # LeetCode 66: Plus One
 
 You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
