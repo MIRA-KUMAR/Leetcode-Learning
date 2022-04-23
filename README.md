@@ -378,6 +378,12 @@ A phrase is a palindrome if, after converting all uppercase letters into lowerca
 
 Given a string s, return true if it is a palindrome, or false otherwise.
 
+# LeetCode 136. Single Number
+
+Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+
+You must implement a solution with a linear runtime complexity and use only constant extra space.
+
 # LeetCode 141. Linked List Cycle
 
 Given head, the head of a linked list, determine if the linked list has a cycle in it.
