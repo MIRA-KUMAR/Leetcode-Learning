@@ -384,6 +384,12 @@ Given a non-empty array of integers nums, every element appears twice except for
 
 You must implement a solution with a linear runtime complexity and use only constant extra space.
 
+# LeetCode 137. Single Number II
+
+Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.
+
+You must implement a solution with a linear runtime complexity and use only constant extra space.
+
 # LeetCode 141. Linked List Cycle
 
 Given head, the head of a linked list, determine if the linked list has a cycle in it.
