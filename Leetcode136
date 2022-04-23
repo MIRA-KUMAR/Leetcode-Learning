@@ -1,0 +1,8 @@
+def singleNumber(nums):
+
+    repeat = {}
+    for i in nums:
+        repeat[i] = 1 + repeat.setdefault(i, 0)
+    for k, v in repeat.items():
+        if v == 1:
+            return k
