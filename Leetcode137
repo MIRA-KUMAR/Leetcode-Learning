@@ -1,0 +1,9 @@
+from collections import Counter
+
+
+def singleNumber(nums):
+
+    rep = Counter(nums)
+    for k, v in rep.items():
+        if v == 1:
+            return k
