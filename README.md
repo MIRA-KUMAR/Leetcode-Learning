@@ -778,6 +778,18 @@ Each child i has a greed factor g[i], which is the minimum size of a cookie that
 
 Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
 
+# LeetCode 535. Encode and Decode TinyURL
+
+TinyURL is a URL shortening service where you enter a URL such as https://leetcode.com/problems/design-tinyurl and it returns a short URL such as http://tinyurl.com/4e9iAk. Design a class to encode a URL and decode a tiny URL.
+
+There is no restriction on how your encode/decode algorithm should work. You just need to ensure that a URL can be encoded to a tiny URL and the tiny URL can be decoded to the original URL.
+
+Implement the Solution class:
+
+    Solution() Initializes the object of the system.
+    String encode(String longUrl) Returns a tiny URL for the given longUrl.
+    String decode(String shortUrl) Returns the original long URL for the given shortUrl. It is guaranteed that the given shortUrl was encoded by the same object.
+
 # LeetCode 538. Convert BST to Greater Tree
 
 Given the root of a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the original BST is changed to the original key plus the sum of all keys greater than the original key in BST.
