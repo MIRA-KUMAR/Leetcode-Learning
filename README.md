@@ -18,6 +18,12 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 
 Given a string s, find the length of the longest substring without repeating characters.
 
+# LeetCode 4. Median of Two Sorted Arrays
+
+Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
+
+    The overall run time complexity should be O(log (m+n)).
+
 # LeetCode 5. Longest Palindromic Substring
 
 Given a string s, return the longest palindromic substring in s.
