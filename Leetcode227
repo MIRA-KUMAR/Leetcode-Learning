@@ -1,0 +1,29 @@
+def calculate(s):
+
+    stack = []
+    i, op = 0, '+'
+
+    while i < len(s):
+        if s[i].isdigit():
+            no = 0
+            while i < len(s) and s[i].isdigit():
+                no = (no)*10 + int(s[i])
+                i += 1
+            i -= 1
+            if op == '+':
+                stack.append(no)
+            elif op == '-':
+                stack.append(no*-1)
+            elif op == '*':
+                n1 = stack.pop()
+                stack.append(n1*no)
+            else:
+                n1 = stack.pop()
+                stack.append(int(n1/no))
+        elif s[i] == '+' or s[i] == '-' or s[i] == '*' or s[i] == '/':
+            op = s[i]
+        i += 1
+    return sum(stack)
+
+
+print(calculate(s="3+2*2"))
