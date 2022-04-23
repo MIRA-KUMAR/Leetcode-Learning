@@ -1,0 +1,24 @@
+def findMedianSortedArrays(nums1, nums2):
+    p, q = 0, 0
+
+    while p < len(nums1) and q < len(nums2):
+        if nums1[p] <= nums2[q]:
+            p += 1
+
+        else:
+            nums1.insert(p, nums2[q])
+            q += 1
+            p += 1
+
+    if q < len(nums2):
+        nums1[p + 1:] = nums2[q:]
+
+    n = len(nums1)
+    if n % 2 == 0:
+        v = (nums1[n//2] + nums1[n//2 - 1])/2
+        return v
+    else:
+        return nums1[n//2]
+
+
+print(findMedianSortedArrays([1, 3], [2]))
