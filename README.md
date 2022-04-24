@@ -880,6 +880,10 @@ Implement MyHashSet class:
     bool contains(key) Returns whether the value key exists in the HashSet or not.
     void remove(key) Removes the value key in the HashSet. If key does not exist in the HashSet, do nothing.
 
+# LeetCode 706. Design HashMap
+
+Design a HashMap without using any built-in hash table libraries.
+
 # LeetCode 746: Min Cost Climbing Stairs
 
 You are given an integer array cost where cost[i] is the cost of ith step on a staircase. Once you pay the cost, you can either climb one or two steps.
