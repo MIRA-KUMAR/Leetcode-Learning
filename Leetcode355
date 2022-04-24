@@ -1,0 +1,38 @@
+import collections
+
+
+class Twitter:
+
+    def __init__(self):
+        self.twitter_data = []
+        self.follow_data = collections.defaultdict(set)
+
+    def postTweet(self, userId: int, tweetId: int) -> None:
+        self.twitter_data.append((userId, tweetId))
+
+    def getNewsFeed(self, userId: int) -> List[int]:
+        users_list = self.follow_data[userId]
+        users_list.add(userId)
+        res = []
+        for i in range(len(self.twitter_data) - 1, -1, -1):
+            u, t = self.twitter_data[i]
+            if u in users_list:
+                res.append(t)
+                if len(res) == 10:
+                    return res
+        return res
+
+    def follow(self, followerId: int, followeeId: int) -> None:
+        self.follow_data[followerId].add(followeeId)
+
+    def unfollow(self, followerId: int, followeeId: int) -> None:
+        if followerId in self.follow_data:
+            self.follow_data[followerId].remove(followeeId)
+
+
+# Your Twitter object will be instantiated and called as such:
+# obj = Twitter()
+# obj.postTweet(userId,tweetId)
+# param_2 = obj.getNewsFeed(userId)
+# obj.follow(followerId,followeeId)
+# obj.unfollow(followerId,followeeId)
