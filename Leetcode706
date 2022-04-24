@@ -1,0 +1,21 @@
+class MyHashMap:
+
+    def __init__(self):
+        self.obj = {}
+
+    def put(self, key: int, value: int) -> None:
+        self.obj[key] = value
+
+    def get(self, key: int) -> int:
+        return self.obj[key] if key in self.obj else -1
+
+    def remove(self, key: int) -> None:
+        if key in self.obj:
+            self.obj.pop(key)
+
+
+# Your MyHashMap object will be instantiated and called as such:
+# obj = MyHashMap()
+# obj.put(key,value)
+# param_2 = obj.get(key)I wanted to know what kind of interview will that be, so I can be better prepared.
+# obj.remove(key)
