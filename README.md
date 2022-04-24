@@ -981,6 +981,10 @@ Return the decimal value of the number in the linked list.
 
 Given an array nums of integers, return how many of them contain an even number of digits.
 
+# LeetCode 1396. Design Underground System
+
+An underground railway system is keeping track of customer travel times between different stations. They are using this data to calculate the average time it takes to travel from one station to another.
+
 # LeetCode 1470. Shuffle the Array
 
 Given the array nums consisting of 2n elements in the form `[x1,x2,...,xn,y1,y2,...,yn]`.
