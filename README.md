@@ -699,6 +699,10 @@ Given an integer array nums and an integer k, return the k most frequent element
 
 Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must appear as many times as it shows in both arrays and you may return the result in any order.
 
+# LeetCode 355. Design Twitter
+
+Design a simplified version of Twitter where users can post tweets, follow/unfollow another user, and is able to see the 10 most recent tweets in the user's news feed.
+
 # LeetCode 367. Valid Perfect Square
 
 Given a positive integer num, write a function which returns True if num is a perfect square else False.
