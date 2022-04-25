@@ -1,0 +1,35 @@
+class Bitset:
+
+    def __init__(self, size: int):
+        self.size = size
+        self.arr1 = ["0"]*size
+        self.arr2 = ["1"]*size
+        self.c = 0
+
+    def fix(self, idx: int) -> None:
+        if self.arr1[idx] == "0":
+            self.arr1[idx] = "1"
+            self.c += 1
+            self.arr2[idx] = "0"
+
+    def unfix(self, idx: int) -> None:
+        if self.arr1[idx] == "1":
+            self.arr1[idx] = "0"
+            self.c -= 1
+            self.arr2[idx] = "1"
+
+    def flip(self) -> None:
+        self.arr1, self.arr2 = self.arr2, self.arr1
+        self.c = self.size - self.c
+
+    def all(self) -> bool:
+        return self.c == self.size
+
+    def one(self) -> bool:
+        return self.c > 0
+
+    def count(self) -> int:
+        return self.c
+
+    def toString(self) -> str:
+        return "".join(self.arr1)
