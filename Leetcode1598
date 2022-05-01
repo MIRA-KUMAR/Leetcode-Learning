@@ -1,0 +1,12 @@
+def minOperations(logs):
+    ans = []
+    for log in logs:
+        if log == "./":
+            continue
+        elif log == "../":
+            if ans:
+                ans.pop()
+        else:
+            ans.append(log)
+
+    return len(ans)
