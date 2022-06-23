@@ -1,0 +1,11 @@
+def canBeTypedWords(text, brokenLetters):
+    bl = set(brokenLetters)
+
+    i, c = 0, 0
+    while i < len(text):
+        if text[i] in bl:
+            c += 1
+            while i < len(text) and text[i] != " ":
+                i += 1
+        i += 1
+    return len(list(text.split(" "))) - c
