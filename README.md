@@ -515,7 +515,7 @@ Output: [4,7,2,9,6,3,1]
 
 # LeetCode 227. Basic Calculator II
 
-Given a string s which represents an expression, evaluate this expression and return its value. 
+Given a string s which represents an expression, evaluate this expression and return its value.
 
 The integer division should truncate toward zero.
 
@@ -746,13 +746,13 @@ For example, a string such as "substitution" could be abbreviated as (but not li
     "12" ("substitution")
     "su3i1u2on" ("su bst i t u ti on")
     "substitution" (no substrings replaced)
-    
+
 The following are not valid abbreviations:
 
     "s55n" ("s ubsti tutio n", the replaced substrings are adjacent)
     "s010n" (has leading zeros)
     "s0ubstitution" (replaces an empty substring)
-    
+
 Given a string word and an abbreviation abbr, return whether the string matches the given abbreviation.
 
 A substring is a contiguous non-empty sequence of characters within a string.
@@ -855,7 +855,7 @@ At the beginning of the game, you start with an empty record. You are given a li
     "+" - Record a new score that is the sum of the previous two scores. It is guaranteed there will always be two previous scores.
     "D" - Record a new score that is double the previous score. It is guaranteed there will always be a previous score.
     "C" - Invalidate the previous score, removing it from the record. It is guaranteed there will always be a previous score.
-    
+
 Return the sum of all the scores on the record.
 
 # LeetCode 696. Count Binary Substrings
@@ -1069,6 +1069,12 @@ Given an integer array nums of length n, you want to create an array ans of leng
 Specifically, ans is the concatenation of two nums arrays.
 
 Return the array ans.
+
+# LeetCode 1935. Maximum Number of Words You Can Type
+
+There is a malfunctioning keyboard where some letter keys do not work. All other keys on the keyboard work properly.
+
+Given a string text of words separated by a single space (no leading or trailing spaces) and a string brokenLetters of all distinct letter keys that are broken, return the number of words in text you can fully type using this keyboard.
 
 # LeetCode 1971. Find if Path Exists in Graph
 
