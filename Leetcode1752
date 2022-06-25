@@ -1,0 +1,13 @@
+def check(nums):
+
+    for i in range(len(nums)):
+        if nums[i] < nums[i - 1]:
+            break
+
+    if i == len(nums):
+        return False
+
+    nums1 = nums[i: len(nums)]
+    nums1 = nums1 + nums[0: i]
+
+    return True if nums1 == sorted(nums) else False

@@ -1040,6 +1040,10 @@ You are given the head of a linked list, and an integer k.
 
 Return the head of the linked list after swapping the values of the kth node from the beginning and the kth node from the end (the list is 1-indexed).
 
+# LeetCode 1752. Check if Array Is Sorted and Rotated
+
+Given an array nums, return true if the array was originally sorted in non-decreasing order, then rotated some number of positions (including zero). Otherwise, return false
+
 # LeetCode 1791. Find Center of Star Graph
 
 There is an undirected star graph consisting of n nodes labeled from 1 to n. A star graph is a graph where there is one center node and exactly n - 1 edges that connect the center node with every other node.
