@@ -276,6 +276,10 @@ Given an m x n grid of characters board and a string word, return true if word e
 
 The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.
 
+# LeetCode 80. Remove Duplicates from Sorted Array II
+
+Given an integer array nums sorted in non-decreasing order, remove some duplicates in-place such that each unique element appears at most twice. The relative order of the elements should be kept the same.
+
 # LeetCode 83: Remove Duplicates from Sorted List
 
 Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
