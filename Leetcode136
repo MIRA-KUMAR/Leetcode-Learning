@@ -1,8 +1,14 @@
-def singleNumber(nums):
+class Solution:
+    def singleNumber(self, nums):
 
-    repeat = {}
-    for i in nums:
-        repeat[i] = 1 + repeat.setdefault(i, 0)
-    for k, v in repeat.items():
-        if v == 1:
-            return k
+        d = {}
+
+        for i in range(len(nums)):
+            # if nums[i] not in d:
+            #     d[nums[i]] = 1
+            # else:
+            #     d[nums[i]] += 1
+            d[nums[i]] = 1 + d.setdefault(nums[i], 0)
+        for i, j in d.items():
+            if j == 1:
+                return i
