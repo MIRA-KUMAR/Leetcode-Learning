@@ -1,0 +1,37 @@
+class TwoSum:
+
+    def __init__(self):
+        """self.twoSum = {}"""
+        self.twoSum = []
+
+    def add(self, number):
+        """self.twoSum[number] = 1 + self.twoSum.setdefault(number, 0)"""
+        self.twoSum.append(number)
+
+    def find(self, value):
+        """for k, v in self.twoSum.items():
+            comple = value - k
+            if comple == k:
+                if v > 1:
+                    return True
+            else:
+                if comple in self.twoSum:
+                    return True
+        return False"""
+        self.twoSum.sort()
+        low, high = 0, len(self.twoSum) - 1
+        while low < high:
+            v = self.twoSum[low] + self.twoSum[high]
+            if v == value:
+                return True
+            if v > value:
+                high -= 1
+            else:
+                low += 1
+        return False
+
+
+# Your TwoSum object will be instantiated and called as such:
+# obj = TwoSum()
+# obj.add(number)
+# param_2 = obj.find(value)
