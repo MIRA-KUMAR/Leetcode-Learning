@@ -1,12 +1,17 @@
-def majorityElement(nums):
-    count = {}
+class Solution:
+    def majorityElement(self, nums):
 
-    for i in nums:
-        count[i] = count.setdefault(i, 0) + 1
+        # 1. Using hashmap
+        """d = {}
+        n = len(nums)//2
 
-    for key, val in count.items():
-        if val > len(nums)/2:
-            return key
+        for i in range(len(nums)):
+            d[nums[i]] = 1 + d.setdefault(nums[i], 0)
 
+        for k, v in d.items():
+            if v > n:
+                return k"""
 
-print(majorityElement(nums=[3, 2, 3]))
+        # 2. Using sort
+        nums.sort()
+        return nums[len(nums)//2]
