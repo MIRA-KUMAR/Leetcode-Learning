@@ -1,3 +1,4 @@
+# Approach 1
 def isHappyHelper(n):
 
     total = 0
@@ -18,3 +19,23 @@ def isHappy(n):
 
 
 print(isHappy(19))
+
+
+# Approach 2
+class Solution:
+    def isHappy(self, n: int) -> bool:
+        visited = set()
+        if n == 1:
+            return True
+        while n != 1:
+            temp = n
+            res = 0
+            if n in visited:
+                return False
+            visited.add(n)
+            while temp > 0:
+                res += (temp % 10)*(temp % 10)
+                temp //= 10
+            if res == 1:
+                return True
+            n = res
