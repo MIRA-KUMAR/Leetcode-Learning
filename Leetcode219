@@ -39,6 +39,18 @@ def containsNearbyDuplicate(nums, k):
 
     return False
 
+    # 4. Adding list in values:
+    """ d = {}
+    for i in range(len(nums)):
+        if nums[i] not in d:
+            d[nums[i]] = [i]
+        else:
+            for j in d[nums[i]]:
+                if abs(j - i) <= k:
+                    return True
+            d[nums[i]].append(i)
+    return False"""
+
 
 nums = [1, 2, 3, 1]
 k = 3
