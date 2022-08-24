@@ -1,12 +1,23 @@
-def containsDuplicate(nums):
-    dup = set()
-    for i in nums:
-        if i not in dup:
-            dup.add(i)
-        else:
-            return True
-    return False
+class Solution:
+    def containsDuplicate(self, nums):
+        # Sorting
+        nums.sort()
+        lp, rp = 0, 1
+        while rp < len(nums):
+            if nums[lp] == nums[rp]:
+                return True
+            lp += 1
+            rp += 1
+        return False
+        """Time comp = O(N*logN)
+        """
 
-
-print(containsDuplicate([1, 2, 3, 1]))
-print(containsDuplicate([1, 2, 3, 4]))
+        # Set
+        seen = set()
+        for i in nums:
+            if i in seen:
+                return True
+            seen.add(i)
+        return False
+        """Time comp = O(N)
+        """
