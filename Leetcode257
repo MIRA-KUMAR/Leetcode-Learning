@@ -5,17 +5,17 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
+    def binaryTreePaths(self, root):
         if not root:
             return None
-        stack = [(root, str(root.val))]
-        paths = []
+        stack = [(str(root.val), root)]
+        res = []
         while stack:
-            node, path = stack.pop()
-            if not node.left and not node.right:
-                paths.append(path)
-            if node.left:
-                stack.append((node.left, path + "->" + str(node.left.val)))
-            if node.right:
-                stack.append((node.right, path + "->" + str(node.right.val)))
-        return paths
+            string, root = stack.pop()
+            if not root.left and not root.right:
+                res.append(string)
+            if root.left:
+                stack.append((string + "->" + str(root.left.val), root.left))
+            if root.right:
+                stack.append((string + "->" + str(root.right.val), root.right))
+        return res
