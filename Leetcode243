@@ -1,15 +1,14 @@
-def shortestDistance(wordsDict, word1, word2):
+class Solution:
+    def shortestDistance(self, wordsDict, word1, word2):
 
-    i1, i2, d = -1, -1, len(wordsDict)
-    for i in range(len(wordsDict)):
-        if wordsDict[i] == word1:
-            i1 = i
-        if wordsDict[i] == word2:
-            i2 = i
-        if i1 != -1 and i2 != -1:
-            d = min(d, abs(i2-i1))
-    return d
+        i1, i2 = -1, -1
+        minD = float('inf')
 
-
-print(shortestDistance(wordsDict=[
-      "practice", "makes", "perfect", "coding", "makes"], word1="coding", word2="practice"))
+        for i in range(len(wordsDict)):
+            if wordsDict[i] == word1:
+                i1 = i
+            elif wordsDict[i] == word2:
+                i2 = i
+            if i1 != -1 and i2 != -1:
+                minD = min(minD, abs(i1 - i2))
+        return minD
