@@ -1,14 +1,21 @@
-def isUgly(n):
-    d = [2, 3, 5]
-    if n < 1:
-        return False
+class Solution:
+    def isUgly(self, n):
+        """s = (2, 3, 5)
 
-    for i in d:
-        while n % i == 0:
-            n //= i
-    return n == 1
+        while n > 1:
+            temp = n
+            for i in s:
+                if n%i == 0:
+                    n = n//i
+                    break
+            if temp == n:
+                return False
+        return n == 1"""
 
+        if n <= 0:
+            return False
 
-print(isUgly(6))
-print(isUgly(1))
-print(isUgly(14))
+        for p in (2, 3, 5):
+            while n % p == 0:
+                n //= p
+        return n == 1
