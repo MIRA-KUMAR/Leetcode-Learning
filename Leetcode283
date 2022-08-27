@@ -1,23 +1,19 @@
-def moveZeroes(nums):
+class Solution:
+    def moveZeroes(self, nums):
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        """for i in nums:
+            if i == 0:
+                nums.remove(i)
+                nums.append(i)"""
 
-    for i in nums:
-        if i == 0:
-            nums.remove(i)
-            nums.append(0)
-
-    return nums
-
-    """     
-    lp, rp = 0, 0
-    while rp<len(nums):
-        if nums[rp] == 0:
-            rp += 1
-        else:
-            nums[lp], nums[rp] = nums[rp], nums[lp]
-            lp += 1
-            rp += 1
-    return nums
-    """
-
-
-print(moveZeroes([0, 1, 0, 3, 12]))
+        # TN : O(N)
+        # SN : O(1)
+        l, r = 0, 0
+        while r < len(nums):
+            while r < len(nums) - 1 and nums[r] == 0:
+                r += 1
+            nums[l], nums[r] = nums[r], nums[l]
+            l += 1
+            r += 1
