@@ -1,0 +1,25 @@
+class Logger:
+
+    def __init__(self):
+        self.array = []
+        self.s = set()
+
+    def shouldPrintMessage(self, timestamp: int, message: str) -> bool:
+        if message not in self.s:
+            self.s.add(message)
+            self.array.append((10 + timestamp, message))
+            return True
+        else:
+            for t, m in self.array:
+                if m == message:
+                    if timestamp < t:
+                        return False
+                    else:
+                        self.array.remove((t, m))
+                        self.array.append((10 + timestamp, message))
+                        return True
+
+
+# Your Logger object will be instantiated and called as such:
+# obj = Logger()
+# param_1 = obj.shouldPrintMessage(timestamp,message)
