@@ -1,19 +1,16 @@
-def isPerfectSquare(num):
-    if num < 2:
-        return True
-    left, right = 2, num//2
-    while left <= right:
-        x = left + (right - left)//2
-        guessed = x*x
-        if guessed == num:
+class Solution:
+    def isPerfectSquare(self, num: int) -> bool:
+
+        if num == 1:
             return True
-        elif guessed > num:
-            right = x - 1
-        else:
-            left = x + 1
 
-    return False
-
-
-print(isPerfectSquare(25))
-print(isPerfectSquare(200))
+        l, h = 0, num//2
+        while l <= h:
+            mid = (l + h)//2
+            if mid * mid == num:
+                return True
+            elif mid * mid < num:
+                l = mid + 1
+            else:
+                h = mid - 1
+        return False
