@@ -807,6 +807,10 @@ Each child i has a greed factor g[i], which is the minimum size of a cookie that
 
 Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
 
+# LeetCode 485. Max Consecutive Ones
+
+Given a binary array nums, return the maximum number of consecutive 1's in the array.
+
 # LeetCode 535. Encode and Decode TinyURL
 
 TinyURL is a URL shortening service where you enter a URL such as https://leetcode.com/problems/design-tinyurl and it returns a short URL such as http://tinyurl.com/4e9iAk. Design a class to encode a URL and decode a tiny URL.
