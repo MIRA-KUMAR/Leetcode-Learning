@@ -1,20 +1,13 @@
-from distutils.spawn import find_executable
+class Solution:
+    def findContentChildren(self, g: List[int], s: List[int]) -> int:
+        g.sort()
+        s.sort()
+        count = 0
+        ind_g, ind_s = 0, 0
+        while ind_g < len(g) and ind_s < len(s):
+            if g[ind_g] <= s[ind_s]:
+                count += 1
+                ind_g += 1
 
-
-def findContentChildren(g, s):
-
-    g.sort()
-    s.sort()
-    count = 0
-
-    i_g, i_s = 0, 0
-    while i_g < len(g) and i_s < len(s):
-        if s[i_s] >= g[i_g]:
-            count += 1
-            i_g, i_s = i_g+1, i_s+1
-        else:
-            i_s += 1
-    return count
-
-
-print(findContentChildren(g=[1, 2, 3], s=[1, 1]))
+            ind_s += 1
+        return count
