@@ -1,0 +1,12 @@
+class Solution:
+    def fib(self, n: int) -> int:
+        if n == 0 or n == 1:
+            return n
+        a, b = 0, 1
+        c = 2
+        while c <= n:
+            tmp = b
+            b = a + b
+            a = tmp
+            c += 1
+        return b
