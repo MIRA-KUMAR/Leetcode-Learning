@@ -860,6 +860,12 @@ Write an SQL query to report the name and bonus amount of each employee with a b
 Return the result table in any order.
 The query result format is in the following example.
 
+# LeetCode 589. N-ary Tree Preorder Traversal
+
+Given the root of an n-ary tree, return the preorder traversal of its nodes' values.
+
+Nary-Tree input serialization is represented in their level order traversal. Each group of children is separated by the null value
+
 # LeetCode 617: Merge Two Binary Trees
 
 You are given two binary trees root1 and root2.
