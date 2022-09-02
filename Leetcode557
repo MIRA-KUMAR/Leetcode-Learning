@@ -1,3 +1,5 @@
+# Approach 1
+
 def reverseWords(s):
     res = s.split(' ')
     output = ""
@@ -10,3 +12,26 @@ def reverseWords(s):
 
 print(reverseWords(s="Let's take LeetCode contest"))
 print(reverseWords(s="God Ding"))
+
+# Approach 2:
+
+
+class Solution:
+    def reverseWords(self, s: str) -> str:
+
+        word = ''
+        i = 0
+        reversed_s = ''
+        while i < len(s):
+            while i < len(s) and s[i] != ' ':
+                word += s[i]
+                i += 1
+            if word != '':
+                j = len(word) - 1
+                while j >= 0:
+                    reversed_s += word[j]
+                    j -= 1
+                reversed_s += ' '
+                word = ''
+            i += 1
+        return reversed_s[:len(reversed_s) - 1]
