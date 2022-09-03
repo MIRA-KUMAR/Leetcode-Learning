@@ -1,0 +1,28 @@
+from collections import Counter
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+
+
+class Solution:
+    def findTarget(self, root, k):
+
+        stack = [root]
+        d = {}
+        while stack:
+            root = stack.pop()
+            if root:
+                d[root.val] = 1 + d.setdefault(root.val, 0)
+                stack.append(root.left)
+                stack.append(root.right)
+        for key, val in d.items():
+            t = k - key
+            if t == key:
+                if d[key] > 1:
+                    return True
+            elif t in d:
+                return True
+        return False
