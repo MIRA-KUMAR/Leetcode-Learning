@@ -1,21 +1,42 @@
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
 
+        # Recursive:
+        """if not root1:
+                return root2
+        if not root2:
+            return root1
 
-def mergeTrees(root1, root2):
-    if root1 == None and root2 == None:
-        return None
+        v1 = root1.val if root1 else 0
+        v2 = root2.val if root2 else 0
 
-    v1 = root1.val if root1 else 0
-    v2 = root2.val if root2 else 0
+        root = TreeNode(v1 + v2)
+        root.left = self.mergeTrees(root1.left if root1 else None, root2.left if root2 else None)
+        root.right = self.mergeTrees(root1.right if root1 else None, root2.right if root2 else None)
+        return root"""
 
-    root = TreeNode(v1 + v2)
-
-    root.left = mergeTrees(root1.left if root1 else None,
-                           root2.left if root2 else None)
-    root.right = mergeTrees(root1.right if root1 else None,
-                            root2.right if root2 else None)
-    return root
+        # Iterative
+        if not root1:
+            return root2
+        if not root2:
+            return root1
+        node = root1
+        stack = [(root1, root2)]
+        while stack:
+            root1, root2 = stack.pop()
+            if root1.left and root2.left:
+                stack.append((root1.left, root2.left))
+            elif not root1.left:
+                root1.left = root2.left
+            if root1.right and root2.right:
+                stack.append((root1.right, root2.right))
+            elif not root1.right:
+                root1.right = root2.right
+            root1.val += root2.val
+        return node
