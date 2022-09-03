@@ -879,6 +879,10 @@ Return the merged tree.
 
 Given a non-negative integer c, decide whether there're two integers a and b such that `a2 + b2 = c`.
 
+# LeetCode 653. Two Sum IV - Input is a BST
+
+Given the root of a Binary Search Tree and a target number k, return true if there exist two elements in the BST such that their sum is equal to the given target.
+
 # LeetCode 669. Trim a Binary Search Tree
 
 Given the root of a binary search tree and the lowest and highest boundaries as low and high, trim the tree so that all its elements lies in [low, high]. Trimming the tree should not change the relative structure of the elements that will remain in the tree (i.e., any node's descendant should remain a descendant). It can be proven that there is a unique answer.
