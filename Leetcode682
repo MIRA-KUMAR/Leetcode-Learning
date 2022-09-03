@@ -1,24 +1,14 @@
-def calPoints(ops):
-    num = 0
-    stack = []
+class Solution:
+    def calPoints(self, ops):
 
-    for op in ops:
-
-        if op == '+':
-            n1 = stack[-1]
-            n2 = stack[-2]
-            stack.append(n1+n2)
-
-        elif op == 'C':
-            stack.pop()
-
-        elif op == 'D':
-            stack.append(2*stack[-1])
-
-        else:
-            stack.append(int(op))
-
-    return sum(stack)
-
-
-print(calPoints(["5", "2", "C", "D", "+"]))
+        stack = []
+        for i in ops:
+            if i == '+':
+                stack.append(stack[-1] + stack[-2])
+            elif i == 'C':
+                stack.pop()
+            elif i == 'D':
+                stack.append(2*stack[-1])
+            else:
+                stack.append(int(i))
+        return sum(stack)
