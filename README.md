@@ -918,6 +918,15 @@ You are given the root of a binary search tree (BST) and an integer val.
 
 Find the node in the BST that the node's value equals val and return the subtree rooted with that node. If such a node does not exist, return null.
 
+# LeetCode 703. Kth Largest Element in a Stream
+
+Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+
+Implement KthLargest class:
+
+    KthLargest(int k, int[] nums) Initializes the object with the integer k and the stream of integers nums.
+    int add(int val) Appends the integer val to the stream and returns the element representing the kth largest element in the stream.
+
 # LeetCode 705. Design HashSet
 
 Design a HashSet without using any built-in hash table libraries.
