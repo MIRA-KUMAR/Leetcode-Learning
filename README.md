@@ -927,6 +927,12 @@ Implement KthLargest class:
     KthLargest(int k, int[] nums) Initializes the object with the integer k and the stream of integers nums.
     int add(int val) Appends the integer val to the stream and returns the element representing the kth largest element in the stream.
 
+# LeetCode 704. Binary Search
+
+Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
+
+You must write an algorithm with `O(log n)` runtime complexity.
+
 # LeetCode 705. Design HashSet
 
 Design a HashSet without using any built-in hash table libraries.
