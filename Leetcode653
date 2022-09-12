@@ -26,3 +26,21 @@ class Solution:
             elif t in d:
                 return True
         return False
+
+        """
+        if not root:
+            return None
+        stack = [root]
+        
+        s = set()
+        while stack:
+            root = stack.pop()
+            comp = k - root.val
+            if comp in s:
+                return True
+            if root.left:
+                stack.append(root.left)
+            if root.right:
+                stack.append(root.right)
+            s.add(root.val)
+        return False"""
