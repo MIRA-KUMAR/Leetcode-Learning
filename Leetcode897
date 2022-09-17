@@ -11,22 +11,17 @@ class Solution:
         # In order traversal
 
         stack = []
-        node = root
         res = head = TreeNode(0)
         head.left = None
+        while stack or root:
+            while root:
+                stack.append(root)
+                root = root.left
+            root = stack.pop()
 
-        while node or stack:
-            while node:
-                stack.append(node)
-                node = node.left
-
-            node = stack.pop()
-
-            head.right = node
-
+            head.right = root
             head = head.right
             head.left = None
 
-            node = node.right
-
+            root = root.right
         return res.right
