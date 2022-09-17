@@ -1,18 +1,8 @@
-def sumOfDigits(nums):
-
-    def sumOfDigitsHelper(num):
-        total = 0
-        while num > 0:
-            total += num % 10
-            num = num//10
-        return total
-
-    num = min(nums)
-    num = sumOfDigitsHelper(num)
-    if num % 2 == 0:
-        return 1
-    else:
-        return 0
-
-
-print(sumOfDigits([34, 23, 1, 24, 75, 33, 54, 8]))
+class Solution:
+    def sumOfDigits(self, nums: List[int]) -> int:
+        n = min(nums)
+        s = 0
+        while n > 0:
+            s += n % 10
+            n //= 10
+        return 1 if s % 2 == 0 else 0
