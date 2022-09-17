@@ -1,14 +1,18 @@
-def rangeSumBST(root, low, high):
-
-    ans = 0
-    stack = [root]
-    while stack:
-        node = stack.pop()
-        if node:
-            if low <= node.val and node.val <= high:
-                ans += node.val
-            if node.val > low:
-                stack.append(node.left)
-            if node.val < high:
-                stack.append(node.right)
-    return ans
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
+        s = 0
+        stack = [root]
+        while stack:
+            root = stack.pop()
+            if root and root.val >= low and root.val <= high:
+                s += root.val
+            if root:
+                stack.append(root.left)
+                stack.append(root.right)
+        return s
