@@ -978,6 +978,12 @@ If there are two middle nodes, return the second middle node.
 
 Given the root of a binary search tree, rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only one right child.
 
+# LeetCode 905. Sort Array By Parity
+
+Given an integer array nums, move all the even integers at the beginning of the array followed by all the odd integers.
+
+Return any array that satisfies this condition.
+
 # LeetCode 937. Reorder Data in Log Files
 
 You are given an array of logs. Each log is a space-delimited string of words, where the first word is the identifier.
