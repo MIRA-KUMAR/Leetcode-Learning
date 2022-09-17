@@ -1034,6 +1034,10 @@ Given a fixed-length integer array arr, duplicate each occurrence of zero, shift
 
 Note that elements beyond the length of the original array are not written. Do the above modifications to the input array in place and do not return anything.
 
+# LeetCode 1099. Two Sum Less Than K
+
+Given an array nums of integers and integer k, return the maximum sum such that there exists i < j with nums[i] + nums[j] = sum and sum < k. If no i, j exist satisfying this equation, return -1.
+
 # LeetCode 1119: Remove Vowels from a String
 
 Given a string s, remove the vowels 'a', 'e', 'i', 'o', and 'u' from it, and return the new string.
