@@ -1028,6 +1028,12 @@ Return the weight of the last remaining stone. If there are no stones left, retu
 
 Given an integer array nums, return 0 if the sum of the digits of the minimum integer in nums is odd, or 1 otherwise.
 
+# LeetCode 1089. Duplicate Zeros
+
+Given a fixed-length integer array arr, duplicate each occurrence of zero, shifting the remaining elements to the right.
+
+Note that elements beyond the length of the original array are not written. Do the above modifications to the input array in place and do not return anything.
+
 # LeetCode 1119: Remove Vowels from a String
 
 Given a string s, remove the vowels 'a', 'e', 'i', 'o', and 'u' from it, and return the new string.
