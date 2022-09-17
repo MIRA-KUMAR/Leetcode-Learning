@@ -1011,6 +1011,19 @@ You are given a list of songs where the ith song has a duration of time[i] secon
 
 Return the number of pairs of songs for which their total duration in seconds is divisible by 60. Formally, we want the number of indices i, j such that i < j with (time[i] + time[j]) % 60 == 0.
 
+# LeetCode 1046. Last Stone Weight
+
+You are given an array of integers stones where stones[i] is the weight of the ith stone.
+
+We are playing a game with the stones. On each turn, we choose the heaviest two stones and smash them together. Suppose the heaviest two stones have weights x and y with x <= y. The result of this smash is:
+
+    If x == y, both stones are destroyed, and
+    If x != y, the stone of weight x is destroyed, and the stone of weight y has new weight y - x.
+
+At the end of the game, there is at most one stone left.
+
+Return the weight of the last remaining stone. If there are no stones left, return 0.
+
 # LeetCode 1085: Sum of Digits in the Minimum Number
 
 Given an integer array nums, return 0 if the sum of the digits of the minimum integer in nums is odd, or 1 otherwise.
