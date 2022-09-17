@@ -969,6 +969,11 @@ Given the root of a Binary Search Tree (BST), return the minimum difference betw
 
 Given two strings s and t, return true if they are equal when both are typed into empty text editors. '#' means a backspace character.
 
+# LeetCode 876. Middle of the Linked List
+
+Given the head of a singly linked list, return the middle node of the linked list.
+If there are two middle nodes, return the second middle node.
+
 # LeetCode 897. Increasing Order Search Tree
 
 Given the root of a binary search tree, rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only one right child.
