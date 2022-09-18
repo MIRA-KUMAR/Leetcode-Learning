@@ -1024,6 +1024,12 @@ At the end of the game, there is at most one stone left.
 
 Return the weight of the last remaining stone. If there are no stones left, return 0.
 
+# LeetCode 1150. Check If a Number Is Majority Element in a Sorted Array
+
+Given an integer array nums sorted in non-decreasing order and an integer target, return true if target is a majority element, or false otherwise.
+
+A majority element in an array nums is an element that appears more than nums.length / 2 times in the array.
+
 # LeetCode 1085: Sum of Digits in the Minimum Number
 
 Given an integer array nums, return 0 if the sum of the digits of the minimum integer in nums is odd, or 1 otherwise.
