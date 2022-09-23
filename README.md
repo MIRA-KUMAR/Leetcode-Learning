@@ -1005,6 +1005,14 @@ Return the final order of the logs.
 
 Given the root node of a binary search tree and two integers low and high, return the sum of values of all nodes with a value in the inclusive range [low, high].
 
+# LeetCode 985: Sum of Even Numbers After Queries
+
+You are given an integer array nums and an array queries where queries[i] = [vali, indexi].
+
+For each query i, first, apply nums[indexi] = nums[indexi] + vali, then print the sum of the even values of nums.
+
+Return an integer array answer where answer[i] is the answer to the ith query.
+
 # LeetCode 1010: Pairs of Songs With Total Durations Divisible by 60
 
 You are given a list of songs where the ith song has a duration of time[i] seconds.
