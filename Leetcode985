@@ -1,0 +1,13 @@
+class Solution:
+    def sumEvenAfterQueries(self, nums, queries):
+
+        s = sum(x for x in nums if x % 2 == 0)
+        ans = []
+        for k, i in queries:
+            if nums[i] % 2 == 0:
+                s -= nums[i]
+            nums[i] += k
+            if nums[i] % 2 == 0:
+                s += nums[i]
+            ans.append(s)
+        return ans
