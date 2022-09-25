@@ -8,5 +8,19 @@ def tribonacci(n):
     return z
 
 
+class Solution:
+    def tribonacci(self, n: int) -> int:
+        a, b, c = 0, 1, 1
+        if n == 0:
+            return 0
+        elif n == 1 or n == 2:
+            return 1
+        count = 3
+        while count <= n:
+            c, b, a = (a+b+c), c, b
+            count += 1
+        return c
+
+
 print(tribonacci(4))
 print(tribonacci(25))
