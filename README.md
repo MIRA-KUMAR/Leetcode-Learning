@@ -1032,12 +1032,6 @@ At the end of the game, there is at most one stone left.
 
 Return the weight of the last remaining stone. If there are no stones left, return 0.
 
-# LeetCode 1150. Check If a Number Is Majority Element in a Sorted Array
-
-Given an integer array nums sorted in non-decreasing order and an integer target, return true if target is a majority element, or false otherwise.
-
-A majority element in an array nums is an element that appears more than nums.length / 2 times in the array.
-
 # LeetCode 1085: Sum of Digits in the Minimum Number
 
 Given an integer array nums, return 0 if the sum of the digits of the minimum integer in nums is odd, or 1 otherwise.
@@ -1069,6 +1063,12 @@ The Tribonacci sequence Tn is defined as follows:
 
 Given n, return the value of Tn.
 
+# LeetCode 1150. Check If a Number Is Majority Element in a Sorted Array
+
+Given an integer array nums sorted in non-decreasing order and an integer target, return true if target is a majority element, or false otherwise.
+
+A majority element in an array nums is an element that appears more than nums.length / 2 times in the array.
+
 # LeetCode 1249. Minimum Remove to Make Valid Parentheses
 
 Given a string s of '(' , ')' and lowercase English characters.
@@ -1080,6 +1080,18 @@ Formally, a parentheses string is valid if and only if:
     It is the empty string, contains only lowercase characters, or
     It can be written as AB (A concatenated with B), where A and B are valid strings, or
     It can be written as (A), where A is a valid string.
+
+# LeetCode 1260. Shift 2D Grid
+
+Given a 2D grid of size m x n and an integer k. You need to shift the grid k times.
+
+In one shift operation:
+
+    Element at grid[i][j] moves to grid[i][j + 1].
+    Element at grid[i][n - 1] moves to grid[i + 1][0].
+    Element at grid[m - 1][n - 1] moves to grid[0][0].
+
+Return the 2D grid after applying shift operation k times.
 
 # LeetCode 1275. Find Winner on a Tic Tac Toe Game
 
