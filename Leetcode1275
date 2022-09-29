@@ -1,44 +1,34 @@
-def tictactoe(moves):
+class Solution:
+    def tictactoe(self, moves):
+        def checkrow(i, p):
+            for j in range(3):
+                if tictactoe[i][j] != p:
+                    return False
+            return True
 
-    n = 3
-    board = [[0] * n for _ in range(n)]
+        def checkcol(j, p):
+            for i in range(3):
+                if tictactoe[i][j] != p:
+                    return False
+            return True
 
-    def check_row(row, player_id):
-        for col in range(n):
-            if board[row][col] != player_id:
-                return False
-        return True
+        def checkdiag(p):
+            for i in range(3):
+                if tictactoe[i][i] != p:
+                    return False
+            return True
 
-    def check_col(col, player_id):
-        for row in range(n):
-            if board[row][col] != player_id:
-                return False
-        return True
+        def checkantidiag(p):
+            for i in range(3):
+                if tictactoe[i][2-i] != p:
+                    return False
+            return True
 
-    def check_diagonal(player_id):
-        for row in range(n):
-            if board[row][row] != player_id:
-                return False
-        return True
-
-    def anti_diagonal(player_id):
-        for row in range(n):
-            if board[row][n-1-row] != player_id:
-                return False
-        return True
-
-    player_id = 1
-
-    for row, col in moves:
-        board[row][col] = player_id
-
-        if check_row(row, player_id) or check_col(col, player_id) or (row == col and check_diagonal(player_id)) or (row+col == n-1 and anti_diagonal(player_id)):
-            return "A" if player_id == 1 else "B"
-
-        player_id *= -1
-
-    return "Draw" if len(moves) == n*n else "Pending"
-
-
-print(tictactoe([[0, 0], [1, 1], [2, 0], [1, 0],
-      [1, 2], [2, 1], [0, 1], [0, 2], [2, 2]]))
+        tictactoe = [[0]*3 for _ in range(3)]
+        p = 1
+        for i, j in moves:
+            tictactoe[i][j] = p
+            if checkrow(i, p) or checkcol(j, p) or checkdiag(p) or checkantidiag(p):
+                return "A" if p == 1 else "B"
+            p *= -1
+        return "Draw" if len(moves) == 9 else "Pending"
