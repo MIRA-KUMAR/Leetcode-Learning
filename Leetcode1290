@@ -1,17 +1,22 @@
-def getDecimalValue(head):
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def getDecimalValue(self, head):
 
-    res = []
-    while head:
-        res.append(head.val)
-        head = head.next
+        if not head:
+            return None
 
-    output = 0
-    po = 0
+        res = []
+        while head:
+            res.append(head.val)
+            head = head.next
 
-    for i in range(len(res)-1, -1, -1):
+        p, op = 0, 0
+        for i in range(len(res)-1, -1, -1):
+            op = op + res[i]*(2**p)
 
-        output = output + res[i]*(2**po)
-        # print(output)
-        po += 1
-
-    return output
+            p += 1
+        return op
