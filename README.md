@@ -1153,6 +1153,14 @@ Given an array of integers nums, return the number of good pairs.
 
 A pair (i, j) is called good if nums[i] == nums[j] and i < j.
 
+# LeetCode 1608. Special Array With X Elements Greater Than or Equal X
+
+You are given an array nums of non-negative integers. nums is considered special if there exists a number x such that there are exactly x numbers in nums that are greater than or equal to x.
+
+Notice that x does not have to be an element in nums.
+
+Return x if the array is special, otherwise, return -1. It can be proven that if nums is special, the value for x is unique.
+
 # LeetCode 1710. Maximum Units on a Truck
 
 You are assigned to put some amount of boxes onto one truck. You are given a 2D array boxTypes, where boxTypes[i] = [numberOfBoxesi, numberOfUnitsPerBoxi]:
