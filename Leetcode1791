@@ -1,14 +1,11 @@
-from os import PRIO_USER
+class Solution:
+    def findCenter(self, edges: List[List[int]]) -> int:
+        node_a = edges[0][0]
+        node_b = edges[0][1]
 
-
-def findCenter(edges):
-    node_a = edges[0][0]
-    node_b = edges[0][1]
-
-    if edges[1][0] == node_a or edges[1][1] == node_a:
-        return node_a
-
-    return node_b
-
-
-print(findCenter(edges=[[1, 2], [2, 3], [4, 2]]))
+        for a, b in edges[1:]:
+            # if node_a == a or node_a == b:
+            #     return node_a
+            # else:
+            #     return node_b
+            return node_a if node_a == a or node_a == b else node_b
