@@ -1,11 +1,25 @@
 def canBeTypedWords(text, brokenLetters):
-    bl = set(brokenLetters)
+    # bl = set(brokenLetters)
 
-    i, c = 0, 0
-    while i < len(text):
-        if text[i] in bl:
+    # i, c = 0, 0
+    # while i < len(text):
+    #     if text[i] in bl:
+    #         c += 1
+    #         while i < len(text) and text[i] != " ":
+    #             i += 1
+    #     i += 1
+    # return len(list(text.split(" "))) - c
+
+    text = text.split(' ')
+    brokenLetters = set(brokenLetters)
+    c = 0
+
+    for t in text:
+        flag = False
+        for i in range(len(t)):
+            if t[i] in brokenLetters:
+                flag = True
+        if flag == False:
             c += 1
-            while i < len(text) and text[i] != " ":
-                i += 1
-        i += 1
-    return len(list(text.split(" "))) - c
+
+    return c
