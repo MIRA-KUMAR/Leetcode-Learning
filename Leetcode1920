@@ -1,15 +1,10 @@
-def buildArray(nums):
+class Solution:
+    def buildArray(self, nums):
+        # Time complexity: O(N), Space complexity: O(N)
+        # res = []
+        # for i in range(len(nums)):
+        #     res.append(nums[nums[i]])
+        # return res
 
-    res = []
-
-    def recur(i):
-        return nums[nums[i]]
-
-    for i in range(len(nums)):
-        res.append(recur(i))
-
-    return res
-
-
-print(buildArray(nums=[0, 2, 1, 5, 3, 4]))
-print(buildArray(nums=[5, 0, 1, 2, 3, 4]))
+        # Time complexity: O(N), O(1)
+        return [nums[num] for num in nums]
