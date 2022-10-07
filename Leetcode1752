@@ -1,4 +1,4 @@
-def check(nums):
+"""def check(nums):
 
     for i in range(len(nums)):
         if nums[i] < nums[i - 1]:
@@ -10,4 +10,15 @@ def check(nums):
     nums1 = nums[i: len(nums)]
     nums1 = nums1 + nums[0: i]
 
-    return True if nums1 == sorted(nums) else False
+    return True if nums1 == sorted(nums) else False"""
+
+
+class Solution:
+    def check(self, nums):
+        # Time comp = O(NlogN + N) = O(NlogN)
+        # Space comp = O(1)
+        sorted_nums = sorted(nums)
+        for i in range(len(nums)):
+            if nums[i:] + nums[:i] == sorted_nums:
+                return True
+        return False
