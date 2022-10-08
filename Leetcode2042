@@ -1,0 +1,11 @@
+class Solution:
+    def areNumbersAscending(self, s: str) -> bool:
+        s = s.split(" ")
+        n1 = 0
+        for n in s:
+            if n.isdigit():
+                if n1 >= int(n):
+                    return False
+                else:
+                    n1 = int(n)
+        return True
