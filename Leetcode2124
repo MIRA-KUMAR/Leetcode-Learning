@@ -12,3 +12,16 @@ def checkString(s):
 
 print(checkString("aaabbb"))
 print(checkString("abab"))
+
+"""
+class Solution:
+    def checkString(self, s: str) -> bool:
+        b_appeared = False
+        for i in range(len(s)):
+            if b_appeared and s[i] == 'a':
+                return False
+            elif s[i] == 'b':
+                b_appeared = True
+        return True
+
+"""
