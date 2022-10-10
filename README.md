@@ -1277,3 +1277,9 @@ A Bitset is a data structure that compactly stores bits.
 # LeetCode 2124. Check if All A's Appears Before All B's
 
 Given a string s consisting of only the characters 'a' and 'b', return true if every 'a' appears before every 'b' in the string. Otherwise, return false.
+
+# LeetCode 2200. Find All K-Distant Indices in an Array
+
+You are given a 0-indexed integer array nums and two integers key and k. A k-distant index is an index i of nums for which there exists at least one index j such that |i - j| <= k and nums[j] == key.
+
+Return a list of all k-distant indices sorted in increasing order.
