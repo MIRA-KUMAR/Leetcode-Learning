@@ -1,16 +1,8 @@
-import re
-from telnetlib import PRAGMA_HEARTBEAT
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
 
-
-def strStr(haystack, needle):
-    if haystack == "" and needle == "":
-        return 0
-    for i in range(len(haystack)):
-        if haystack[i: i + len(needle)] == needle:
-            return i
-    return -1
-
-
-print(strStr(haystack="hello", needle="ll"))
-print(strStr(haystack="aaaaa", needle="bba"))
-print(strStr(haystack="", needle=""))
+        l = len(needle)
+        for i in range(len(haystack)):
+            if haystack[i:i+l] == needle:
+                return i
+        return -1
