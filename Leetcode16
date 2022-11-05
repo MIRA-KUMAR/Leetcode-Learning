@@ -1,20 +1,23 @@
-def threeSumClosest(nums, target):
+class Solution:
+    def threeSumClosest(self, nums, target):
 
-    nums.sort()
-    diff = float('inf')
+        # T.N : O(n2 + nlogn)
+        nums.sort()                                 # O(nlogn)
+        res = []
+        diff = float('inf')
 
-    for i in range(len(nums)):
-        lo, hi = i+1, len(nums)-1
-        while lo < hi:
-            s = nums[i] + nums[lo] + nums[hi]
-            if abs(target - s) < abs(diff):
-                diff = target - s
-            if s < target:
-                lo += 1
-            else:
-                hi -= 1
-
-        if diff == 0:
-            return target
-
-    return (target-diff)
+        for i in range(len(nums)):                     # O(n2)
+            if i == 0 or nums[i] != nums[i-1]:
+                l, r = i + 1, len(nums) - 1
+                while l < r:
+                    s = nums[i] + nums[l] + nums[r]
+                    if s == target:
+                        return s
+                    elif s > target:
+                        r -= 1
+                    else:
+                        l += 1
+                    if abs(target - s) < diff:
+                        ans = s
+                        diff = abs(target - s)
+        return ans
