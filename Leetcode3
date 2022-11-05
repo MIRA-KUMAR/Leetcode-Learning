@@ -1,28 +1,27 @@
-def lengthOfLongestSubstring(s):
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
 
-    # Using hashmap
-    """ans, c = 0, 0
-    mp = {}
+        #         l, r = 0, 0
+        #         seen = set()
+        #         c = 0
 
-    for i in range(len(s)):
-        if s[i] in mp:
-            c = max(c, mp[s[i]])
-        ans = max(ans, i - c + 1)
-        mp[s[i]] = i + 1
+        #         while r < len(s):
+        #             while l <= r and s[r] in seen:
+        #                 seen.remove(s[l])
+        #                 l += 1
+        #             seen.add(s[r])
+        #             c = max(c, r - l + 1)
+        #             r += 1
 
-    return ans"""
+        #         return c
 
-    # Using set/ sliding window problem:
-    charset = set()
-    l = 0
-    ans = 0
-    for r in range(len(s)):
-        while s[r] in charset:
-            charset.remove(s[l])
-            l += 1
-        charset.add(s[r])
-        ans = max(ans, r - l + 1)
-    return ans
+        mp = {}
+        ans, c = 0, 0
+        for i, ch in enumerate(s):
 
+            if ch in mp:
+                c = max(c, mp[ch])
 
-print(lengthOfLongestSubstring(s="abcabcbb"))
+            ans = max(ans, i - c + 1)
+            mp[ch] = i + 1
+        return ans
