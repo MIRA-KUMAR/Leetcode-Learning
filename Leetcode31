@@ -1,0 +1,26 @@
+class Solution:
+    def nextPermutation(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        """
+        We traverse the list from the end, and find the first non-increasing number. 
+        If the ind == -1 (list is in in descending order), then we return the sorted list. 
+        Else, 
+            We find the number from the end, that is just greater to the pivot element and swap the numbers
+            Then we sort the elements from pivot element to end.
+        """
+
+        # TN : O(nlogn) ?? as reverse takes O(nlogn) complexity
+        if len(nums) < 2:
+            return nums.reverse()
+        p = len(nums) - 2
+        while p >= 0 and nums[p] >= nums[p + 1]:
+            p -= 1
+        if p == -1:
+            return nums.reverse()
+        for x in range(len(nums) - 1, p, -1):
+            if nums[x] > nums[p]:
+                nums[p], nums[x] = nums[x], nums[p]
+                break
+        nums[p+1:] = reversed(nums[p+1:])
