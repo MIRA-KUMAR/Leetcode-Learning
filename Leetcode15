@@ -1,4 +1,34 @@
 class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+
+        # TN: O(n2+ nlogn)
+        nums.sort()                     # O(nlogn)
+        self.res = []
+
+        def twoSum(i):
+            l, r = i+1, len(nums) - 1
+            while l < r:
+                s = nums[l] + nums[r] + nums[i]
+                if s > 0:
+                    r -= 1
+                elif s < 0:
+                    l += 1
+                else:
+                    self.res.append((nums[i], nums[l], nums[r]))
+                    l += 1
+                    r -= 1
+                    while l < r and nums[l] == nums[l - 1]:
+                        l += 1
+
+        for i in range(len(nums)):                  # O(n2)
+            if nums[i] > 0:
+                break
+            if i == 0 or nums[i] != nums[i - 1]:
+                twoSum(i)
+        return self.res
+
+
+"""class Solution:
     def threeSum(self, nums):
 
         # TN : O(nlogn + n2)
@@ -30,7 +60,7 @@ class Solution:
         return res
 
 
-"""
+
 def threeSum(nums):
 
 
@@ -87,4 +117,5 @@ def threeSumII(nums, i, res):
         j += 1
 
 
-print(threeSum(nums=[-1, 0, 1, 2, -1, -4]))"""
+print(threeSum(nums=[-1, 0, 1, 2, -1, -4]))
+"""
