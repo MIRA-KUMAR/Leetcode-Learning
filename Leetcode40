@@ -1,0 +1,21 @@
+class Solution:
+    def combinationSum2(self, candidates, target):
+        candidates.sort()
+        res = []
+
+        def backtrack(rem, comb, i):
+            if rem == 0:
+                res.append(list(comb))
+                return
+            elif rem < 0:
+                return
+            prev = -1
+            for x in range(i, len(candidates)):
+                if prev == candidates[x]:
+                    continue
+                comb.append(candidates[x])
+                backtrack(rem - candidates[x], comb, x + 1)
+                comb.pop()
+                prev = candidates[x]
+        backtrack(target, [], 0)
+        return res
