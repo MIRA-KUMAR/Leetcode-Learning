@@ -1,5 +1,7 @@
 class Solution:
     def combinationSum2(self, candidates, target):
+
+        # TN : O(2^n)
         candidates.sort()
         res = []
 
