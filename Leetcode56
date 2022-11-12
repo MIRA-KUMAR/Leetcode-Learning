@@ -1,13 +1,13 @@
 class Solution:
     def merge(self, intervals):
 
+        # TN : O(N+NlogN) => O(NlogN)
         intervals.sort(key=lambda x: x[0])
         res = [intervals[0]]
 
-        for a, b in intervals[1:]:
-            if a <= res[-1][1]:
-                res[-1][1] = max(res[-1][1], b)
+        for start, end in intervals[1:]:
+            if start <= res[-1][1]:
+                res[-1][1] = max(end, res[-1][1])
             else:
-                res.append([a, b])
-
+                res.append([start, end])
         return res
