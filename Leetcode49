@@ -1,21 +1,22 @@
+import imp
+
+
 import collections
 
 
 class Solution:
     def groupAnagrams(self, strs):
-
-        d = collections.defaultdict(list)
-
-        # TN : O(NK)
+        # O(n*mlogm)
+        """d = collections.defaultdict(list)
         for word in strs:
-            t = [0]*26
-            for ch in word:
-                t[ord(ch) - ord('a')] += 1
-            d[tuple(t)].append(word)
-
-        return d.values()
-
-        # TN = O(N*KlogK)
-        """for word in strs:
             d[tuple(sorted(word))].append(word)
         return d.values()"""
+
+        # O(n*m)
+        di = collections.defaultdict(list)
+        for word in strs:
+            d = [0]*26
+            for w in word:
+                d[ord(w) - ord('a')] += 1
+            di[tuple(d)].append(word)
+        return di.values()
