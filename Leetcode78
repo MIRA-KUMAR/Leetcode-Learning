@@ -1,9 +1,8 @@
-def subsets(nums):
-
-    output = [[]]
-    for num in nums:
-        output += [[num] + cur for cur in output]
-    return output
-
-
-print(subsets(nums=[1, 2, 3]))
+class Solution:
+    def subsets(self, nums):
+        # TN : O(N* (2**N))
+        output = [[]]
+        for num in nums:
+            output += [[num] + curr for curr in output]
+            print(output)
+        return output
