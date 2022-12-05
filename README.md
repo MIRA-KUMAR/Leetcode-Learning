@@ -288,6 +288,12 @@ You are climbing a staircase. It takes n steps to reach the top.
 
 Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 
+# LeetCode 77. Combinations
+
+Given two integers n and k, return all possible combinations of k numbers chosen from the range [1, n].
+
+You may return the answer in any order.
+
 # LeetCode 78. Subsets
 
 Given an integer array nums of unique elements, return all possible subsets (the power set).
