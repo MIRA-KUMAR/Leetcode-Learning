@@ -3,6 +3,8 @@ from collections import Counter
 
 class Solution:
     def topKFrequent(self, nums, k):
+
+        # TC: O(klog(n))
         #         if k == len(nums):
         #             return nums
         #         count = Counter(nums)
@@ -10,6 +12,7 @@ class Solution:
 
         #         return heapq.nlargest(k, count.keys(), key=count.get)
 
+        # TC: O(n)
         res = []
         count = Counter(nums)
         freq = [[] for _ in range(len(nums)+1)]
