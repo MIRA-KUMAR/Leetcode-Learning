@@ -688,6 +688,10 @@ Given an array nums containing n distinct numbers in the range [0, n], return th
 
 Given the root of a binary search tree and a target value, return the value in the BST that is closest to the target.
 
+# LeetCode 271. Encode and Decode Strings
+
+Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is decoded back to the original list of strings.
+
 # LeetCode 278. First Bad Version
 
 You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.
