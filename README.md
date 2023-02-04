@@ -439,6 +439,12 @@ A phrase is a palindrome if, after converting all uppercase letters into lowerca
 
 Given a string s, return true if it is a palindrome, or false otherwise.
 
+# LeetCode 128. Longest Consecutive Sequence
+
+Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+
+You must write an algorithm that runs in O(n) time.
+
 # LeetCode 136. Single Number
 
 Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
