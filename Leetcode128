@@ -1,0 +1,16 @@
+class Solution:
+    def longestConsecutive(self, nums):
+        # TN : 0(N)
+        # SN : 0(N)
+        numsSet = set(nums)
+        ct, maxCt = 0, 0
+        for n in numsSet:
+
+            if n - 1 not in numsSet:
+                while n in numsSet:
+                    ct += 1
+                    n += 1
+                maxCt = max(maxCt, ct)
+                ct = 0
+
+        return maxCt
