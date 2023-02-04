@@ -1,12 +1,35 @@
-def isPalindrome(s):
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        #         res = ''
+        #         for ch in s:
+        #             if ch.isalnum():
+        #                 res += ch
 
-    check = ""
-    for c in s:
-        if c.isalpha() or c.isdigit():
-            check += c
+        #         return res.lower() == res[::-1].lower()
 
-    check = check.lower()
-    return check == check[::-1]
+        # TN: O(N)
+        # SN: O(1)
+        # l, r = 0, len(s) - 1
+        # while l < r:
+        #     while l < r and not s[l].isalnum():
+        #         l += 1
+        #     while l < r and not s[r].isalnum():
+        #         r -= 1
+        #     if s[l].lower() != s[r].lower():
+        #         return False
+        #     l,r = l+1, r-1
+        # return True
 
+        def isalnum(c):
+            return True if (ord('a') <= ord(c) <= ord('z') or ord('0') <= ord(c) <= ord('9')) else False
+        l, r = 0, len(s) - 1
+        while l < r:
+            while l < r and not isalnum(s[l].lower()):
 
-print(isPalindrome(s="A man, a plan, a canal: Panama"))
+                l += 1
+            while l < r and not isalnum(s[r].lower()):
+                r -= 1
+            if s[l].lower() != s[r].lower():
+                return False
+            l, r = l+1, r-1
+        return True
