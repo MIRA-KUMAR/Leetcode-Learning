@@ -233,6 +233,10 @@ Each number in candidates may only be used once in the combination.
 
     Note: The solution set must not contain duplicate combinations.
 
+# LeetCode 42. Trapping Rain Water
+
+Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
+
 # LeetCode 48: Rotate Image:
 
 You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
