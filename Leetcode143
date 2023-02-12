@@ -1,0 +1,38 @@
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def reorderList(self, head):
+        """
+        Do not return anything, modify head in-place instead.
+        """
+        # TN : O(N)
+        # SN : O(1)
+
+        slow, fast = head, head.next
+
+        # Iterate through the linked list
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+
+        # Cut the list into two halves:
+        curr = slow.next
+        slow.next = prev = None
+
+        # Reverse the second half
+        while curr:
+            temp = curr.next
+            curr.next = prev
+            prev = curr
+            curr = temp
+
+        # Make the changes:
+        first, second = head, prev
+        while second:
+            temp1, temp2 = first.next, second.next
+            first.next = second
+            second.next = temp1
+            first, second = temp1, temp2
