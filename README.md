@@ -894,6 +894,12 @@ Given two non-negative integers, num1 and num2 represented as string, return the
 
 You must solve the problem without using any built-in library for handling large integers (such as BigInteger). You must also not convert the inputs to integers directly.
 
+# LeetCode 424. Longest Repeating Character Replacement
+
+You are given a string `s` and an integer `k`. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most `k` times.
+
+Return the length of the longest substring containing the same letter you can get after performing the above operations.
+
 # LeetCode 445. Assign Cookies
 
 Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie.
