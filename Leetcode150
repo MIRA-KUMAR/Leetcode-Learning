@@ -1,0 +1,30 @@
+class Solution:
+    def evalRPN(self, tokens):
+
+        stack = []
+        op = ["+", "-", "*", "/"]
+        for i in range(len(tokens)):
+            if tokens[i] in op:
+                a = stack.pop()
+                b = stack.pop()
+                if tokens[i] == "+":
+
+                    stack.append(b+a)
+
+                elif tokens[i] == "-":
+                    stack.append(b-a)
+                elif tokens[i] == "*":
+
+                    stack.append(a*b)
+                    # print(stack)
+                elif tokens[i] == "/":
+                    print(stack)
+                    stack.append(int(b/a))
+                    # print(stack)
+
+            else:
+
+                stack.append(int(tokens[i]))
+                # print(stack)
+
+        return stack[-1]
