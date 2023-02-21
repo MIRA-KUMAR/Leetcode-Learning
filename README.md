@@ -499,6 +499,20 @@ Given the root of a binary tree, return the preorder traversal of its nodes' val
 
 Given the root of a binary tree, return the postorder traversal of its nodes' values.
 
+# LeetCode 155. Min Stack
+
+Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+
+Implement the MinStack class:
+
+    `MinStack() initializes the stack object.
+    void push(int val) pushes the element val onto the stack.
+    void pop() removes the element on the top of the stack.
+    int top() gets the top element of the stack.
+    int getMin() retrieves the minimum element in the stack.`
+
+You must implement a solution with O(1) time complexity for each function.
+
 # LeetCode 160. Intersection of Two Linked Lists
 
 Given the heads of two singly linked-lists headA and headB, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null.
