@@ -1074,6 +1074,10 @@ Implement MyHashSet class:
 
 Design a HashMap without using any built-in hash table libraries.
 
+# LeetCode 739. Daily Temperatures
+
+Given an array of integers temperatures represents the daily temperatures, return an array answer such that answer[i] is the number of days you have to wait after the ith day to get a warmer temperature. If there is no future day for which this is possible, keep answer[i] == 0 instead.
+
 # LeetCode 746: Min Cost Climbing Stairs
 
 You are given an integer array cost where cost[i] is the cost of ith step on a staircase. Once you pay the cost, you can either climb one or two steps.
