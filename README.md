@@ -353,6 +353,10 @@ Given the head of a sorted linked list, delete all nodes that have duplicate num
 
 Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
 
+# LeetCode 84. Largest Rectangle in Histogram
+
+Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
+
 # LeetCode 88: Merge Sorted Array
 
 You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
