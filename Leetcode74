@@ -1,0 +1,18 @@
+class Solution:
+    def searchMatrix(self, matrix, target):
+
+        r, c = len(matrix), len(matrix[0])
+
+        left, right = 0, r * c - 1
+
+        while left <= right:
+            target_ind = (left + right)//2
+
+            if matrix[target_ind//c][target_ind % c] == target:
+                return True
+            elif matrix[target_ind//c][target_ind % c] > target:
+                right = target_ind - 1
+            else:
+                left = target_ind + 1
+
+        return False
