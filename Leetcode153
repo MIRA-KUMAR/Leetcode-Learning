@@ -1,0 +1,19 @@
+class Solution:
+    def findMin(self, nums):
+        min_i = float('inf')
+
+        def helper(min_i, l, r):
+            while l <= r:
+                t_ind = (l + r)//2
+                min_i = min(min_i, nums[t_ind])
+
+                if nums[t_ind] > nums[r]:
+                    l = t_ind + 1
+
+                else:
+                    r = t_ind - 1
+
+            return min_i
+
+        min_i = helper(min_i, 0, len(nums) - 1)
+        return min_i
