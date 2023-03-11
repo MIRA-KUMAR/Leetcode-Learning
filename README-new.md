@@ -165,4 +165,23 @@ cars/
 ├── fast_car.py
 ├── slow_car.py
 
+
+.
+   ├── ...
+   ├── test                    
+   │   ├── test_avg_car.py          
+   │   ├── test_fancy_car.py         
+   │   ├── test_main.py
+   │   ├── test_slow_car.py
+   │   └── test_fast_car.py               
+   ├── README.md
+   ├── main.py
+   ├── requirements.txt
+   ├── errors.py
+   ├── base_car.py
+   ├── fancy_car.py
+   ├── fast_car.py
+   ├── slow_car.py
+   └── ...
+
 ---
