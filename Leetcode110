@@ -6,14 +6,39 @@
 #         self.right = right
 class Solution:
     def isBalanced(self, root):
-
+        res = 0
+        
         def helper(root):
+            nonlocal res
             if not root:
-                return 0
+                return -1 
+            left = helper(root.left)
+            right = helper(root.right)
+            res = max(res, abs(left - right))
+            return 1 + max(left, right)
+        
+        helper(root)
+        if res >= 2:
+            return False
+        return True
+            
 
-            return 1 + max(helper(root.left), helper(root.right))
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+# class Solution:
+#     def isBalanced(self, root):
 
-        if not root:
-            return True
+#         def helper(root):
+#             if not root:
+#                 return 0
 
-        return self.isBalanced(root.left) and self.isBalanced(root.right) and abs(helper(root.left) - helper(root.right)) < 2
+#             return 1 + max(helper(root.left), helper(root.right))
+
+#         if not root:
+#             return True
+
+#         return self.isBalanced(root.left) and self.isBalanced(root.right) and abs(helper(root.left) - helper(root.right)) < 2
