@@ -1009,6 +1009,12 @@ The length of a path between two nodes is represented by the number of edges bet
 
 Given a string s, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
 
+# LeetCode 572. Subtree of Another Tree
+
+Given the roots of two binary trees root and subRoot, return true if there is a subtree of root with the same structure and node values of subRoot and false otherwise.
+
+A subtree of a binary tree tree is a tree that consists of a node in tree and all of this node's descendants. The tree tree could also be considered as a subtree of itself.
+
 # LeetCode 577: Employee Bonus
 
 Write an SQL query to report the name and bonus amount of each employee with a bonus less than 1000.
