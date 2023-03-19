@@ -408,6 +408,10 @@ Two binary trees are considered the same if they are structurally identical, and
 
 Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
 
+# LeetCode 102. Binary Tree Level Order Traversal
+
+Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
+
 # LeetCode 104: Maximum Depth of Binary Tree
 
 Given the root of a binary tree, return its maximum depth.
