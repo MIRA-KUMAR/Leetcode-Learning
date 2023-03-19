@@ -1,0 +1,27 @@
+import collections
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def rightSideView(self, root):
+        if not root:
+            return []
+        queue = collections.deque()
+        queue.append(root)
+        res = []
+        
+        while queue:
+            rightNode = None
+            l = len(queue)
+            for _ in range(l):
+                rightNode = queue.popleft()
+                if rightNode.left:
+                    queue.append(rightNode.left)
+                if rightNode.right:
+                    queue.append(rightNode.right)
+            res.append(rightNode.val)
+                
+        return res
