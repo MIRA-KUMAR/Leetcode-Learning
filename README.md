@@ -1017,6 +1017,12 @@ The length of a path between two nodes is represented by the number of edges bet
 
 Given a string s, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
 
+# LeetCode 567. Permutation in String
+
+Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise.
+
+In other words, return true if one of s1's permutations is the substring of s2.
+
 # LeetCode 572. Subtree of Another Tree
 
 Given the roots of two binary trees root and subRoot, return true if there is a subtree of root with the same structure and node values of subRoot and false otherwise.
