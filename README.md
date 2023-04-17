@@ -522,6 +522,10 @@ Given the root of a binary tree, return the preorder traversal of its nodes' val
 
 Given the root of a binary tree, return the postorder traversal of its nodes' values.
 
+# LeetCode 148. Sort List
+
+Given the head of a linked list, return the list after sorting it in ascending order.
+
 # LeetCode 150. Evaluate Reverse Polish Notation
 
 You are given an array of strings tokens that represents an arithmetic expression in a Reverse Polish Notation.
