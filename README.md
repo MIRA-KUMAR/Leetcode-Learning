@@ -1387,6 +1387,12 @@ Return the head of the linked list after swapping the values of the kth node fro
 
 Given an array nums, return true if the array was originally sorted in non-decreasing order, then rotated some number of positions (including zero). Otherwise, return false
 
+# LeetCode 1768. Merge Strings Alternately
+
+You are given two strings word1 and word2. Merge the strings by adding letters in alternating order, starting with word1. If a string is longer than the other, append the additional letters onto the end of the merged string.
+
+Return the merged string.
+
 # LeetCode 1791. Find Center of Star Graph
 
 There is an undirected star graph consisting of n nodes labeled from 1 to n. A star graph is a graph where there is one center node and exactly n - 1 edges that connect the center node with every other node.
