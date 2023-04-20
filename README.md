@@ -452,6 +452,12 @@ In Pascal's triangle, each number is the sum of the two numbers directly above i
 
 Given an integer rowIndex, return the rowIndexth (0-indexed) row of the Pascal's triangle.
 
+# LeetCode 120. Triangle
+
+Given a triangle array, return the minimum path sum from top to bottom.
+
+For each step, you may move to an adjacent number of the row below. More formally, if you are on index i on the current row, you may move to either index i or index i + 1 on the next row.
+
 # LeetCode 121: Best Time to Buy and Sell Stock
 
 You are given an array prices where prices[i] is the price of a given stock on the ith day.
@@ -1344,7 +1350,7 @@ A ZigZag path for a binary tree is defined as follow:
     If the current direction is right, move to the right child of the current node; otherwise, move to the left child.
     Change the direction from right to left or from left to right.
     Repeat the second and third steps until you can't move in the tree.
-    
+
 Zigzag length is defined as the number of nodes visited - 1. (A single node has a length of 0).
 
 Return the longest ZigZag path contained in that tree.
